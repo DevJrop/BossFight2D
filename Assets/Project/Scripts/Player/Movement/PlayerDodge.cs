@@ -9,10 +9,12 @@ namespace Project.Scripts.Player.Movement
         public bool isDashing;
         PlayerMove playerMove;
         private Rigidbody2D rb;
+        SpriteRenderer sr;
         void Start()
         {
             playerMove = GetComponent<PlayerMove>();
             rb = GetComponent<Rigidbody2D>();
+            sr = GetComponent<SpriteRenderer>();
             isDashing = !isDashing;
         }
         void Update()

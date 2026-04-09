@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7506309308988781698}
   - component: {fileID: 4228116225329514040}
   - component: {fileID: 1832209501962205342}
+  - component: {fileID: 2674154525866016348}
   - component: {fileID: 8555346400023830481}
   m_Layer: 0
   m_Name: Content
@@ -213,6 +214,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Player.Movement.PlayerMove
   speed: 2
+  moveInput: {x: 0, y: 0}
+--- !u!114 &2674154525866016348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097549918869243746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0e0d445bd2ef6408cf302b442414f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Player.Movement.PlayerDodge
+  dashForce: 5
+  dashTime: 0.3
+  isDashing: 0
 --- !u!95 &8555346400023830481
 Animator:
   serializedVersion: 7
