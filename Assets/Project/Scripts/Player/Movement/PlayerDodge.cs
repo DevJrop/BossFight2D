@@ -7,9 +7,9 @@ namespace Project.Scripts.Player.Movement
         [SerializeField]private float dashForce;
         [SerializeField]private float dashTime;
         public bool isDashing;
-        PlayerMove playerMove;
+        private PlayerMove playerMove;
         private Rigidbody2D rb;
-        SpriteRenderer sr;
+        private SpriteRenderer sr;
         void Start()
         {
             playerMove = GetComponent<PlayerMove>();

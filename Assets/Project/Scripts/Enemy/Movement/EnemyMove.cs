@@ -1,15 +1,13 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Serialization;
-
 namespace Project.Scripts.Enemy.Movement
 {
     public class EnemyMove : MonoBehaviour
     {
        [SerializeField] Transform[] spots;
-       int currentSpot;
+       private int currentSpot;
        private Transform enemy;
-       float time;
+       private float time;
        private bool isWaiting;
        private int randPos;
 
