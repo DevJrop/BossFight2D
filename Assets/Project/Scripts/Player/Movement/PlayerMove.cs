@@ -44,10 +44,17 @@ namespace Project.Scripts.Player.Movement
         }
         private void HandleFlip()
         {
-            if (moveInput.x != 0)
+            SpriteRenderer spritePlayer = GetComponent<SpriteRenderer>();
+            if (moveInput.x < 0)
             {
-                transform.localScale = new Vector3(Mathf.Sign(moveInput.x), 1f, 1f);
+                spritePlayer.flipX = true;
+                lastMove.x = -lastMove.x;
             }
+            else if (moveInput.x > 0)
+            {
+                spritePlayer.flipX = false;
+            }
+            return;
         }
     }
 }

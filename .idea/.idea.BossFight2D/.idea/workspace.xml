@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="55d2ec87-80b0-45ae-8b84-7535eff753b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Movement/EnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Movement/EnemyMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerDodge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerDodge.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerMove.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +90,8 @@
       <workItem from="1775507553079" duration="8609000" />
       <workItem from="1775525699812" duration="2876000" />
       <workItem from="1775575933258" duration="37777000" />
-      <workItem from="1775953075129" duration="6754000" />
+      <workItem from="1775953075129" duration="7084000" />
+      <workItem from="1776017521795" duration="1937000" />
     </task>
     <servers />
   </component>
