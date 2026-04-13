@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 039773dc32af1e94cbbea0701b61db48, type: 3}
+  m_Name: Attack
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Combat.Attack
+  damage: 3.1
+  bulletPrefab: {fileID: 376729729236152882, guid: a893557f698fad645a75c7d1cae2e8cb, type: 3}
+  cooldown: 0
+  speed: 3.39
