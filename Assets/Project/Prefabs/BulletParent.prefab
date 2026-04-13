@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7617886242820898785}
   - component: {fileID: 5047357707981026437}
   m_Layer: 0
-  m_Name: Healer_16
+  m_Name: BulletParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

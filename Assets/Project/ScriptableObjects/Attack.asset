@@ -16,3 +16,4 @@ MonoBehaviour:
   bulletPrefab: {fileID: 376729729236152882, guid: a893557f698fad645a75c7d1cae2e8cb, type: 3}
   cooldown: 0
   speed: 3.39
+  timeAfterDestroy: 3

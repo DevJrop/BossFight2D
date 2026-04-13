@@ -1,7 +1,6 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Project.Scripts.Enemy.Combat
+namespace Project.Scripts.Player.Combat
 {
     [CreateAssetMenu(fileName = "Attack", menuName = "Scriptable Objects/Attack")]
     public class Attack : ScriptableObject
@@ -10,7 +9,6 @@ namespace Project.Scripts.Enemy.Combat
         public GameObject bulletPrefab;
         public float cooldown;
         public float speed;
-
-
+        public float timeAfterDestroy;
     }
 }
