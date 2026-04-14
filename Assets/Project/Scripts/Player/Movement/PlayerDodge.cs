@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 namespace Project.Scripts.Player.Movement
 {
@@ -9,13 +10,15 @@ namespace Project.Scripts.Player.Movement
         public bool isDashing;
         private PlayerMove playerMove;
         private Rigidbody2D rb;
-        private SpriteRenderer sr;
+        [SerializeField]private TrailRenderer trail;
+        [SerializeField] private CinemachineCamera virtualCamera;
+        private CinemachineBasicMultiChannelPerlin noise;
         void Start()
         {
+            noise = virtualCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
             playerMove = GetComponent<PlayerMove>();
             rb = GetComponent<Rigidbody2D>();
-            sr = GetComponent<SpriteRenderer>();
-            isDashing = !isDashing;
+            trail.enabled = false;
         }
         void Update()
         {
@@ -25,15 +28,22 @@ namespace Project.Scripts.Player.Movement
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                isDashing = false;
+                
                 StartCoroutine(Dash());
             }
         }
         IEnumerator Dash()
         {
+            isDashing = true;
+            trail.enabled = true;
+            noise.AmplitudeGain = 1.2f;
+            noise.FrequencyGain = 2f;
             rb.linearVelocity = playerMove.moveInput * dashForce;
             yield return new WaitForSeconds(dashTime);
-            isDashing = true;
+            noise.AmplitudeGain = 0f;
+            noise.FrequencyGain = 0f;
+            trail.enabled = false;
+            isDashing = false;
         }
     }
 }
