@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8965184075536171033, guid: 934e7c94822186f4bb6a97d8e3f2e21e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -159,7 +159,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.07, y: 0.07}
+    oldSize: {x: 0.25, y: 0.25}
     newSize: {x: 0.07, y: 0.07}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -179,5 +179,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301e0462165f01043b769869b9b53dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Combat.Bullet
-  rb: {fileID: 833161089685192652}
-  so: {fileID: 11400000, guid: 042920e1ccf44c7469c5caeb6d22dcdd, type: 2}
