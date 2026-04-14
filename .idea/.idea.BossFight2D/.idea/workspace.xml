@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2ec87-80b0-45ae-8b84-7535eff753b1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Animations/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Character and Portrait/Character/Pre-made/Josh/Run.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Character and Portrait/Character/Pre-made/Josh/Run.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/BulletParent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/BulletParent.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Combat/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Combat/Bullet.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +94,7 @@
       <workItem from="1775953075129" duration="7084000" />
       <workItem from="1776017521795" duration="8985000" />
       <workItem from="1776101101098" duration="15253000" />
+      <workItem from="1776181753509" duration="320000" />
     </task>
     <servers />
   </component>

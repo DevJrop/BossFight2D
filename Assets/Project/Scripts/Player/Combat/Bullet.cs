@@ -21,5 +21,13 @@ namespace Project.Scripts.Player.Combat
             yield return new WaitForSeconds(lifeTime);
             pool.ReturnObject(gameObject);
         }
+
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Wall"))
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }
