@@ -44,5 +44,7 @@ namespace Project.Scripts.Player.Combat
             Bullet bulletScript = bulletObject.GetComponent<Bullet>();
             bulletScript.SetPool(objectPool, attack.timeAfterDestroy);
         }
+        
+        
     }
 }
