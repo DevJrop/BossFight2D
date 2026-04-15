@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.UI;
+
 namespace Project.Scripts.Player.Movement
 {
     public class PlayerDodge : MonoBehaviour
@@ -13,12 +16,18 @@ namespace Project.Scripts.Player.Movement
         [SerializeField]private TrailRenderer trail;
         [SerializeField] private CinemachineCamera virtualCamera;
         private CinemachineBasicMultiChannelPerlin noise;
+        public event Action<float, float> OnStaminaChanged;
+        [SerializeField]private float currentStamina;
+        [SerializeField]private float maxStamina;
+        [SerializeField]private float dodgeCost;
+        [SerializeField]private Image staminaBar;
         void Start()
         {
             noise = virtualCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
             playerMove = GetComponent<PlayerMove>();
             rb = GetComponent<Rigidbody2D>();
             trail.enabled = false;
+            currentStamina = maxStamina;
         }
         void Update()
         {
@@ -28,10 +37,21 @@ namespace Project.Scripts.Player.Movement
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                
-                StartCoroutine(Dash());
+                TryDodge();
             }
         }
+
+        private void TryDodge()
+        {
+            if (currentStamina < dodgeCost)
+            {
+                return;
+            }
+            currentStamina -= dodgeCost;
+            OnStaminaChanged?.Invoke(currentStamina, maxStamina);
+            StartCoroutine(Dash());
+        }
+
         IEnumerator Dash()
         {
             isDashing = true;
@@ -45,5 +65,9 @@ namespace Project.Scripts.Player.Movement
             trail.enabled = false;
             isDashing = false;
         }
+        
+        public float MaxStamina => maxStamina;
+
+        public float CurrentStamina => currentStamina;
     }
 }

@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 81376747}
   - component: {fileID: 81376749}
   - component: {fileID: 81376748}
+  - component: {fileID: 81376750}
   m_Layer: 5
   m_Name: StaminaBar
   m_TagString: Untagged
@@ -345,6 +346,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81376746}
   m_CullTransparentMesh: 1
+--- !u!114 &81376750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81376746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c3b8fad0215004d95b95c1bc53dcb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Player.Movement.StaminaBar
+  dodge: {fileID: 1213600106}
+  fill: {fileID: 81376748}
 --- !u!1 &89617885
 GameObject:
   m_ObjectHideFlags: 0
@@ -16528,6 +16543,17 @@ TrailRenderer:
   m_CorrespondingSourceObject: {fileID: 2500818933822206269, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
   m_PrefabInstance: {fileID: 5085270530348379768}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1213600106 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+  m_PrefabInstance: {fileID: 5085270530348379768}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0e0d445bd2ef6408cf302b442414f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Player.Movement.PlayerDodge
 --- !u!1 &1239563368
 GameObject:
   m_ObjectHideFlags: 0
@@ -29050,9 +29076,25 @@ PrefabInstance:
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: dodgeCost
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: maxStamina
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 81376748}
+    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: virtualCamera
       value: 
       objectReference: {fileID: 1670649544}
+    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: currentStamina
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4639655321723128919, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: m_SortingOrder
       value: 6
