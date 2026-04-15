@@ -27,7 +27,7 @@ namespace Project.Scripts.Enemy.Core
         {
             if (health != null)
             {
-                ChangeBar(health.currentHealth, health.maxHealth);
+                ChangeBar(health.CurrentHealth, health.MaxHealth);
             }
         }
         private void ChangeBar(float current, float max)

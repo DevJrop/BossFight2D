@@ -3,24 +3,32 @@ using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
-
 namespace Project.Scripts.Player.Movement
 {
     public class PlayerDodge : MonoBehaviour
     {
+        [Header("Dodge Movement")]
         [SerializeField]private float dashForce;
         [SerializeField]private float dashTime;
+        [SerializeField]private float dodgeCost;
         public bool isDashing;
+        [Header("Stamina")]
+        [SerializeField]private float currentStamina;
+        [SerializeField]private float maxStamina;
+        [SerializeField]private Image staminaBar;
+        [SerializeField]private float regenTime;
+        [SerializeField] private float regenValue;
+        public event Action<float, float> OnStaminaChanged;
+        
+        [Header("References")]
         private PlayerMove playerMove;
         private Rigidbody2D rb;
         [SerializeField]private TrailRenderer trail;
+        
+        [Header("Camera Shake")]
         [SerializeField] private CinemachineCamera virtualCamera;
         private CinemachineBasicMultiChannelPerlin noise;
-        public event Action<float, float> OnStaminaChanged;
-        [SerializeField]private float currentStamina;
-        [SerializeField]private float maxStamina;
-        [SerializeField]private float dodgeCost;
-        [SerializeField]private Image staminaBar;
+        
         void Start()
         {
             noise = virtualCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
@@ -32,6 +40,7 @@ namespace Project.Scripts.Player.Movement
         void Update()
         {
             DodgeInput();
+            StartCoroutine(RegenStamina());
         }
         private void DodgeInput()
         {
@@ -40,7 +49,6 @@ namespace Project.Scripts.Player.Movement
                 TryDodge();
             }
         }
-
         private void TryDodge()
         {
             if (currentStamina < dodgeCost)
@@ -50,8 +58,8 @@ namespace Project.Scripts.Player.Movement
             currentStamina -= dodgeCost;
             OnStaminaChanged?.Invoke(currentStamina, maxStamina);
             StartCoroutine(Dash());
+            
         }
-
         IEnumerator Dash()
         {
             isDashing = true;
@@ -65,9 +73,17 @@ namespace Project.Scripts.Player.Movement
             trail.enabled = false;
             isDashing = false;
         }
-        
-        public float MaxStamina => maxStamina;
 
+        IEnumerator RegenStamina()
+        {
+            if (currentStamina < maxStamina)
+            {
+                currentStamina += regenValue * Time.deltaTime;
+                OnStaminaChanged?.Invoke(currentStamina, maxStamina);
+                yield return new WaitForSeconds(regenTime);
+            }
+        }
+        public float MaxStamina => maxStamina;
         public float CurrentStamina => currentStamina;
     }
 }
