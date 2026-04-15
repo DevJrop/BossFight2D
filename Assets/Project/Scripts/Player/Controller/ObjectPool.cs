@@ -1,15 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
-
 namespace Project.Scripts.Player.Controller
 {
     public class ObjectPool : MonoBehaviour
     {
         [SerializeField] private GameObject objectPool;
         [SerializeField] private int initialSize = 10;
-    
         private Queue<GameObject> pool = new Queue<GameObject>();
-
         private void Awake()
         {
             for (int i = 0; i < initialSize; i++)
@@ -33,7 +30,6 @@ namespace Project.Scripts.Player.Controller
                 return obj;
             }
         }
-
         public void ReturnObject(GameObject obj)
         {
             obj.SetActive(false);

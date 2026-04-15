@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Project.Scripts.Enemy.Core;
 using Project.Scripts.Player.Controller;
@@ -10,7 +9,16 @@ namespace Project.Scripts.Player.Combat
     {
         private ObjectPool pool;
         private float lifeTime;
-        [SerializeField]private Attack attack;
+        [SerializeField] private Attack attack;
+
+        private Rigidbody2D rb;
+        private TrailRenderer trail;
+
+        private void Awake()
+        {
+            rb = GetComponent<Rigidbody2D>();
+            trail = GetComponent<TrailRenderer>();
+        }
 
         public void SetPool(ObjectPool pool, float lifeTime)
         {
@@ -19,34 +27,41 @@ namespace Project.Scripts.Player.Combat
             StopAllCoroutines();
             StartCoroutine(LifeRoutine());
         }
+
         IEnumerator LifeRoutine()
         {
             yield return new WaitForSeconds(lifeTime);
-            pool.ReturnObject(gameObject);
+            ReturnToPool();
         }
+
         void OnTriggerEnter2D(Collider2D other)
         {
-            DestroyAtWall(other);
-
-            GetDamage(other);
-        }
-
-        private void GetDamage(Collider2D other)
-        {
-            Health health = other.GetComponent<Health>();
-
-            if (other.GetComponent<Health>())
+            if (other.CompareTag("Wall"))
             {
-                health.TakeDamage(attack.damage);
-                Destroy(gameObject);
+                ReturnToPool();
+                return;
+            }
+            if (other.CompareTag("Enemy"))
+            {
+                Health health = other.GetComponent<Health>();
+                if (health != null)
+                {
+                    health.TakeDamage(attack.damage);
+                    ReturnToPool();
+                }
             }
         }
-        private void DestroyAtWall(Collider2D other)
+
+        private void ReturnToPool()
         {
-            if (other.gameObject.CompareTag("Wall"))
+            rb.linearVelocity = Vector2.zero;
+            StopAllCoroutines();
+            if (trail != null)
             {
-                Destroy(gameObject);
+                trail.Clear();
             }
+
+            pool.ReturnObject(gameObject);
         }
     }
 }
