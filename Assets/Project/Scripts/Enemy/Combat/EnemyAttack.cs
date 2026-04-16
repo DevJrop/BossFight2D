@@ -1,3 +1,4 @@
+using Project.Scripts.Enemy.Movement;
 using Project.Scripts.Player.Combat;
 using Project.Scripts.Player.Controller;
 using UnityEngine;
@@ -16,6 +17,7 @@ namespace Project.Scripts.Enemy.Combat
 
         [Header("Attack Data (SO)")]
         [SerializeField] private Attack attack;
+        [SerializeField] private EnemyMove move;
 
         private float timer;
         private void Update()
@@ -41,7 +43,9 @@ namespace Project.Scripts.Enemy.Combat
                 float angle = i * angleStep;
                 Vector2 direction = GetDirectionFromAngle(angle);
 
+                if (!move.IsWaiting) return;
                 SpawnBullet(direction);
+                
             }
         }
         private void SpawnBullet(Vector2 direction)

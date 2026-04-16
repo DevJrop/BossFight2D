@@ -21,7 +21,6 @@ namespace Project.Scripts.Enemy.Movement
        private void Update()
        {
            enemy.position = Vector2.MoveTowards(enemy.position, spots[currentSpot].position, Time.deltaTime * speedBetweenPoints);
-
            CheckPathing();
        }
        private void CheckPathing()
@@ -35,7 +34,6 @@ namespace Project.Scripts.Enemy.Movement
                isWaiting = true;
                StartCoroutine(Wait());
            }
-           
        }
        IEnumerator Wait()
        {
@@ -48,5 +46,7 @@ namespace Project.Scripts.Enemy.Movement
            isWaiting = false;
            Debug.Log(currentSpot);
        }
+
+       public bool IsWaiting => isWaiting;
     }
 }

@@ -6,11 +6,11 @@ namespace Project.Scripts.Enemy.Core
 {
     public class Health : MonoBehaviour, IDamageable
     {
-        private float currentHealth = 100;
-        private float maxHealth = 100;
+        private float currentHealth;
+        [SerializeField]private float maxHealth = 100;
         public event Action<float, float> OnHealthChanged;
 
-        private void Start()
+        private void Awake()
         {
             currentHealth = maxHealth;
         }

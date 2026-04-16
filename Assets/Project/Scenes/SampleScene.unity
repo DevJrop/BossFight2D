@@ -3369,7 +3369,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.216113, y: -0.3035948, z: -10}
+  m_LocalPosition: {x: 0.20843926, y: -0.3035948, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4097,7 +4097,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.9433962, g: 0.8013458, b: 0.77874684, a: 1}
-  m_Intensity: 0.68
+  m_Intensity: 0.44
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -17166,7 +17166,7 @@ Transform:
   m_GameObject: {fileID: 1670649542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.216113, y: -0.3035948, z: -10}
+  m_LocalPosition: {x: 0.20843926, y: -0.3035948, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28979,6 +28979,14 @@ PrefabInstance:
       value: -0.181
       objectReference: {fileID: 0}
     - target: {fileID: 4826814334081951953, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: timeSpot
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826814334081951953, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: speedBetweenPoints
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826814334081951953, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: 'spots.Array.data[0]'
       value: 
       objectReference: {fileID: 1424031508}
@@ -28995,6 +29003,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1420589680}
     - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: move
+      value: 
+      objectReference: {fileID: 5799127837795627908}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: pool
       value: 
       objectReference: {fileID: 690250636}
@@ -29002,6 +29014,10 @@ PrefabInstance:
       propertyPath: attack
       value: 
       objectReference: {fileID: 11400000, guid: 3f37bda984144d947b40bb618d19fd9d, type: 2}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: fireRate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: bulletCount
       value: 50
@@ -29050,6 +29066,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: maxHealth
+      value: 2000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29079,6 +29099,14 @@ PrefabInstance:
       propertyPath: virtualCamera
       value: 
       objectReference: {fileID: 1670649544}
+    - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228116225329514040, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869572548873491418, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -29135,6 +29163,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af52f8561a0abf049a3cf2ffd8020611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Core.Health
+--- !u!114 &5799127837795627908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4826814334081951953, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+  m_PrefabInstance: {fileID: 4202402077594716664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fe0d3bd679cf740b86d9121e7baf36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Movement.EnemyMove
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
