@@ -15,6 +15,9 @@ namespace Project.Scripts.Enemy.Combat
         [SerializeField] private Transform player;
         [SerializeField] private EnemyMove move;
 
+        [Header("Animation")]
+        [SerializeField] private Animator animator;
+
         [Header("Radial Pattern")]
         [SerializeField] private int bulletCount = 12;
         [SerializeField] private float fireRate = 1f;
@@ -32,17 +35,20 @@ namespace Project.Scripts.Enemy.Combat
         [SerializeField] private float wallRotationSpeed = 120f;
         [SerializeField] private Attack wallAttack;
 
-        // ================= FASES =================
+        private enum AttackPhase
+        {
+            Radial,
+            Target,
+            Wall
+        }
+
         private AttackPhase currentPhase;
 
-        // ================= TIMERS =================
         private float timer;
         private float targetTimer;
         private float wallTimer;
-
         private float rotationOffset;
 
-        // ================= CONTROL =================
         private bool wasWaitingLastFrame;
 
         private void Update()
@@ -53,11 +59,13 @@ namespace Project.Scripts.Enemy.Combat
                 return;
             }
 
-            // Detecta el momento exacto en que entra en espera
             if (!wasWaitingLastFrame && move.IsWaiting)
             {
                 SelectNewPhase();
                 ResetTimers();
+
+                if (animator != null)
+                    animator.SetTrigger("Idle");
             }
 
             wasWaitingLastFrame = true;
@@ -65,20 +73,17 @@ namespace Project.Scripts.Enemy.Combat
             ExecuteCurrentPhase();
         }
 
-        // ================= SELECCIÓN DE FASE =================
         private void SelectNewPhase()
         {
             int random = Random.Range(0, 3);
             currentPhase = (AttackPhase)random;
         }
-
         private void ResetTimers()
         {
             timer = 0;
             targetTimer = 0;
             wallTimer = 0;
         }
-
         private void ExecuteCurrentPhase()
         {
             switch (currentPhase)
@@ -96,8 +101,6 @@ namespace Project.Scripts.Enemy.Combat
                     break;
             }
         }
-
-        // ================= RADIAL =================
         private void HandleRadialPattern()
         {
             rotationOffset += rotationSpeed * Time.deltaTime;
@@ -107,10 +110,13 @@ namespace Project.Scripts.Enemy.Combat
             if (timer >= fireRate)
             {
                 ExecuteRotatingRadial();
+
+                if (animator != null)
+                    animator.SetTrigger("Attack");
+
                 timer = 0;
             }
         }
-
         private void ExecuteRotatingRadial()
         {
             float angleStep = 360f / bulletCount;
@@ -123,8 +129,6 @@ namespace Project.Scripts.Enemy.Combat
                 SpawnBullet(direction, radialAttack);
             }
         }
-
-        // ================= TARGET =================
         private void HandleTargetAttack()
         {
             targetTimer += Time.deltaTime;
@@ -135,18 +139,18 @@ namespace Project.Scripts.Enemy.Combat
                 targetTimer = 0;
             }
         }
-
         private void ShootAtPlayer()
         {
             if (player == null) return;
-
+            
             Vector3 currentPlayerPosition = player.position;
             Vector2 direction = (currentPlayerPosition - firePoint.position).normalized;
 
             SpawnBullet(direction, targetAttack);
-        }
 
-        // ================= WALL =================
+            if (animator != null)
+                animator.SetTrigger("Attack");
+        }
         private void HandleWallAttack()
         {
             rotationOffset += wallRotationSpeed * Time.deltaTime;
@@ -155,11 +159,16 @@ namespace Project.Scripts.Enemy.Combat
 
             if (wallTimer >= wallFireRate)
             {
-                ExecuteWallAttack();
+                if (animator != null)
+
+                    ExecuteWallAttack();
+
+                if (animator != null)
+                    animator.SetTrigger("Attack");
+
                 wallTimer = 0;
             }
         }
-
         private void ExecuteWallAttack()
         {
             float startAngle = rotationOffset - wallArcAngle / 2f;
@@ -173,8 +182,6 @@ namespace Project.Scripts.Enemy.Combat
                 SpawnBullet(direction, wallAttack);
             }
         }
-
-        // ================= COMMON =================
         private void SpawnBullet(Vector2 direction, Attack attackData)
         {
             GameObject obj = pool.GetObject(attackData.bulletPrefab);
