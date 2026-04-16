@@ -9,6 +9,7 @@ namespace Project.Scripts.Player.Combat
         [SerializeField] private Transform firePoint;
         public bool canFire;
         [SerializeField] private ObjectPool objectPool;
+        BulletOwner bulletOwner;
         private void Start()
         {
             canFire = !canFire;
@@ -42,9 +43,8 @@ namespace Project.Scripts.Player.Combat
             rb.AddForce(firePoint.right * attack.speed, ForceMode2D.Impulse);
             
             Bullet bulletScript = bulletObject.GetComponent<Bullet>();
-            bulletScript.SetPool(objectPool, attack.timeAfterDestroy);
+
+            bulletScript.SetPool(objectPool, attack.timeAfterDestroy, BulletOwner.Player, attack.damage);
         }
-        
-        
     }
 }
