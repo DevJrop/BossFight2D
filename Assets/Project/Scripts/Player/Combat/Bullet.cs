@@ -14,19 +14,21 @@ namespace Project.Scripts.Player.Combat
 
         private Rigidbody2D rb;
         private TrailRenderer trail;
+        private GameObject prefab;
 
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
             trail = GetComponent<TrailRenderer>();
         }
-        public void SetPool(ObjectPool pool, float lifeTime, BulletOwner owner, float damage)
+        public void SetPool(ObjectPool pool, GameObject prefab, float lifeTime, BulletOwner owner, float damage)
         {
             this.pool = pool;
             this.lifeTime = lifeTime;
             this.owner = owner;
             this.damage = damage;
-
+            this.prefab = prefab;
+            
             StopAllCoroutines();
             StartCoroutine(LifeRoutine());
         }
@@ -46,7 +48,7 @@ namespace Project.Scripts.Player.Combat
             {
                 ApplyDamage(other);
             }
-            else if (owner == BulletOwner.Enemy && other.CompareTag("Player"))
+            if (owner == BulletOwner.Enemy && other.CompareTag("Player"))
             {
                 ApplyDamage(other);
             }
@@ -71,7 +73,7 @@ namespace Project.Scripts.Player.Combat
             {
                 trail.Clear();
             }
-            pool.ReturnObject(gameObject);
+            pool.ReturnObject(gameObject, prefab);
         }
     }
 }

@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: b02112b65cce35f4b84a4dacbcdc4a57, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 5869572548873491418}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,9 +141,10 @@ GameObject:
   - component: {fileID: 1832209501962205342}
   - component: {fileID: 2674154525866016348}
   - component: {fileID: 100576819054954185}
+  - component: {fileID: 3476364176363382055}
   m_Layer: 0
   m_Name: Content
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,7 +213,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4723107735738678597, guid: cc3d2ffe9dc202e4ca7c75c7e17386e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -281,7 +282,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -366,7 +367,7 @@ TrailRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Time: 0.09
   m_PreviewTimeScale: 1
@@ -378,7 +379,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.84382546
+        value: 0.45566696
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -450,9 +451,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f25ad30cf08ddd640accda735f289a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Player.Movement.PlayerMove
-  speed: 2
-  acceleration: 10
-  deceleration: 8
+  speed: 7
+  acceleration: 1
+  deceleration: 2
   moveInput: {x: 0, y: 0}
 --- !u!114 &2674154525866016348
 MonoBehaviour:
@@ -466,9 +467,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0e0d445bd2ef6408cf302b442414f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Player.Movement.PlayerDodge
-  dashForce: 5
+  dashForce: 18
   dashTime: 0.3
+  dodgeCost: 25
   isDashing: 0
+  currentStamina: 100
+  maxStamina: 100
+  staminaBar: {fileID: 0}
+  regenTime: 3
+  regenValue: 11
   trail: {fileID: 2500818933822206269}
   virtualCamera: {fileID: 0}
 --- !u!114 &100576819054954185
@@ -485,8 +492,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Combat.AttackPlayer
   attack: {fileID: 11400000, guid: 042920e1ccf44c7469c5caeb6d22dcdd, type: 2}
   firePoint: {fileID: 7664654444335894423}
-  canFire: 0
   objectPool: {fileID: 0}
+--- !u!114 &3476364176363382055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097549918869243746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af52f8561a0abf049a3cf2ffd8020611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Core.Health
 --- !u!1 &2670212769013945015
 GameObject:
   m_ObjectHideFlags: 0

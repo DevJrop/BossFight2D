@@ -3369,7 +3369,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2100524, y: -0.3035948, z: -10}
+  m_LocalPosition: {x: 0.216113, y: -0.3035948, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4193,8 +4193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f639a39f43faf0c49b68e26804ad05ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectPool
-  objectPool: {fileID: 376729729236152882, guid: a893557f698fad645a75c7d1cae2e8cb, type: 3}
-  initialSize: 10
 --- !u!1 &721378801
 GameObject:
   m_ObjectHideFlags: 0
@@ -5355,6 +5353,7 @@ GameObject:
   - component: {fileID: 777048932}
   - component: {fileID: 777048934}
   - component: {fileID: 777048933}
+  - component: {fileID: 777048935}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -5419,6 +5418,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777048931}
   m_CullTransparentMesh: 1
+--- !u!114 &777048935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777048931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20034cbd9affba14190336e23c95c258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Core.UpdateBar
+  health: {fileID: 1964410465}
+  healthBar: {fileID: 777048933}
 --- !u!1 &807139923
 GameObject:
   m_ObjectHideFlags: 0
@@ -16522,11 +16535,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!96 &1213600104 stripped
-TrailRenderer:
-  m_CorrespondingSourceObject: {fileID: 2500818933822206269, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-  m_PrefabInstance: {fileID: 5085270530348379768}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1213600106 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
@@ -17158,7 +17166,7 @@ Transform:
   m_GameObject: {fileID: 1670649542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2100524, y: -0.3035948, z: -10}
+  m_LocalPosition: {x: 0.216113, y: -0.3035948, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28777,6 +28785,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1964410465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+  m_PrefabInstance: {fileID: 5085270530348379768}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af52f8561a0abf049a3cf2ffd8020611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Core.Health
 --- !u!1 &2037192928
 GameObject:
   m_ObjectHideFlags: 0
@@ -28979,6 +28998,14 @@ PrefabInstance:
       propertyPath: pool
       value: 
       objectReference: {fileID: 690250636}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f37bda984144d947b40bb618d19fd9d, type: 2}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: bulletCount
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6543453951877598534, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -29044,54 +29071,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 609728637294627452, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: m_SortingOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1832209501962205342, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: speed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1832209501962205342, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: acceleration
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1832209501962205342, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: deceleration
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2500818933822206269, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2500818933822206269, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
-      value: 0.45566696
-      objectReference: {fileID: 0}
-    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: trail
-      value: 
-      objectReference: {fileID: 1213600104}
-    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: dashForce
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: dodgeCost
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: regenTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: maxStamina
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: regenValue
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: staminaBar
       value: 
@@ -29100,14 +29079,6 @@ PrefabInstance:
       propertyPath: virtualCamera
       value: 
       objectReference: {fileID: 1670649544}
-    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: currentStamina
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4639655321723128919, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
-      propertyPath: m_SortingOrder
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 5869572548873491418, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

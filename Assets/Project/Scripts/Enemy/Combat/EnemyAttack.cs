@@ -14,13 +14,10 @@ namespace Project.Scripts.Enemy.Combat
         [SerializeField] private int bulletCount = 12;
         [SerializeField] private float fireRate = 1f;
 
-        [Header("Bullet Settings")]
-        [SerializeField] private float bulletSpeed = 5f;
-        [SerializeField] private float bulletLifeTime = 3f;
-        [SerializeField] private float damage = 10f;
+        [Header("Attack Data (SO)")]
+        [SerializeField] private Attack attack;
 
         private float timer;
-
         private void Update()
         {
             HandleShooting();
@@ -49,16 +46,22 @@ namespace Project.Scripts.Enemy.Combat
         }
         private void SpawnBullet(Vector2 direction)
         {
-            GameObject obj = pool.GetObject();
+            GameObject obj = pool.GetObject(attack.bulletPrefab);
 
             obj.transform.position = firePoint.position;
             obj.transform.rotation = Quaternion.identity;
 
             Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
-            rb.linearVelocity = direction * bulletSpeed;
+            rb.linearVelocity = direction * attack.speed;
 
             Bullet bullet = obj.GetComponent<Bullet>();
-            bullet.SetPool(pool, bulletLifeTime, BulletOwner.Enemy, damage);
+            bullet.SetPool(
+                pool,
+                attack.bulletPrefab,
+                attack.timeAfterDestroy,
+                BulletOwner.Enemy,
+                attack.damage
+            );
         }
         private Vector2 GetDirectionFromAngle(float angle)
         {
