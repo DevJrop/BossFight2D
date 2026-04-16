@@ -6,25 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="55d2ec87-80b0-45ae-8b84-7535eff753b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/BulletParent.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/BulletParent.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Enemy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Enemy.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/EnemyAttack.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/EnemyAttack.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/EnemyBullet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/EnemyBullet.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/PlayerAttack.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/PlayerAttack.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/PlayerBullet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/PlayerBullet.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Sprite Light 2D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/Sprite Light 2D.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Combat/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Combat/EnemyAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Core/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Core/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Movement/EnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Movement/EnemyMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Exterior/Dungeon/statue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Exterior/Dungeon/statue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/projectile/Pupple.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/projectile/Pupple.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/projectile/Yellow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/projectile/Yellow.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +102,7 @@
       <workItem from="1776101101098" duration="15253000" />
       <workItem from="1776181753509" duration="21399000" />
       <workItem from="1776265104583" duration="2508000" />
-      <workItem from="1776358588580" duration="4637000" />
+      <workItem from="1776358588580" duration="7164000" />
     </task>
     <servers />
   </component>

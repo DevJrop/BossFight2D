@@ -3369,7 +3369,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20843926, y: -0.3035948, z: -10}
+  m_LocalPosition: {x: 0.19987956, y: -0.3035948, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17166,7 +17166,7 @@ Transform:
   m_GameObject: {fileID: 1670649542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20843926, y: -0.3035948, z: -10}
+  m_LocalPosition: {x: 0.19987956, y: -0.3035948, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29015,12 +29015,44 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 3f37bda984144d947b40bb618d19fd9d, type: 2}
     - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 433370436}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: fireRate
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: wallAttack
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f37bda984144d947b40bb618d19fd9d, type: 2}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: bulletCount
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: radialAttack
+      value: 
+      objectReference: {fileID: 11400000, guid: 13ccf559985a9254781b2ff8ca086c27, type: 2}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: targetAttack
+      value: 
+      objectReference: {fileID: 11400000, guid: 568703a3f91839b458b82ad9eaadbd18, type: 2}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: wallFireRate
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: targetFireRate
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: wallBulletCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: wallRotationSpeed
+      value: 154.7
       objectReference: {fileID: 0}
     - target: {fileID: 6543453951877598534, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: m_Name
