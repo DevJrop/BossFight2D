@@ -32,7 +32,7 @@ namespace Project.Scripts.Player.Movement
         }
         private void FixedUpdate()
         {
-            if (playerDodge.isDashing) return;
+            if (playerDodge.IsDashing) return;
             rb.linearVelocity = moveInput * speed;
         }
         private void InputMovement()

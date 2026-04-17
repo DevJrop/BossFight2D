@@ -11,7 +11,9 @@ namespace Project.Scripts.Player.Movement
         [SerializeField]private float dashForce;
         [SerializeField]private float dashTime;
         [SerializeField]private float dodgeCost;
-        public bool isDashing;
+        private bool isDashing;
+        private bool isInvulnerable;
+        
         [Header("Stamina")]
         [SerializeField]private float currentStamina;
         [SerializeField]private float maxStamina;
@@ -62,6 +64,7 @@ namespace Project.Scripts.Player.Movement
         }
         IEnumerator Dash()
         {
+            isInvulnerable = true;
             isDashing = true;
             trail.enabled = true;
             noise.AmplitudeGain = 1.2f;
@@ -72,6 +75,7 @@ namespace Project.Scripts.Player.Movement
             noise.FrequencyGain = 0f;
             trail.enabled = false;
             isDashing = false;
+            isInvulnerable = false;
         }
 
         IEnumerator RegenStamina()
@@ -83,6 +87,8 @@ namespace Project.Scripts.Player.Movement
                 yield return new WaitForSeconds(regenTime);
             }
         }
+        public bool IsInvulnerable => isInvulnerable;
+        public bool IsDashing => isDashing;
         public float MaxStamina => maxStamina;
         public float CurrentStamina => currentStamina;
     }

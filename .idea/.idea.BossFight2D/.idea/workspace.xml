@@ -6,18 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="55d2ec87-80b0-45ae-8b84-7535eff753b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Animations/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Characters/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/Characters/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Pathing.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/Pathing.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Combat/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Combat/EnemyAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Movement/EnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Movement/EnemyMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/damage.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/damage.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/dead.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/dead.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/entering.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/entering.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/idle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/leaving.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/leaving.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/spitting.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Enemy/Spike/spitting.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Combat/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Combat/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerDodge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerDodge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Character and Portrait/Character/Pre-made/Josh/Damage.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/Farm RPG - Tiny Asset Pack - (All in One)/Character and Portrait/Character/Pre-made/Josh/Damage.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +103,8 @@
       <workItem from="1776101101098" duration="15253000" />
       <workItem from="1776181753509" duration="21399000" />
       <workItem from="1776265104583" duration="2508000" />
-      <workItem from="1776358588580" duration="14840000" />
+      <workItem from="1776358588580" duration="16034000" />
+      <workItem from="1776468952187" duration="898000" />
     </task>
     <servers />
   </component>

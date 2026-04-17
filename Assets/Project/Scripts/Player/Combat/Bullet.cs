@@ -1,6 +1,7 @@
 using System.Collections;
 using Project.Scripts.Enemy.Core;
 using Project.Scripts.Player.Controller;
+using Project.Scripts.Player.Movement;
 using UnityEngine;
 namespace Project.Scripts.Player.Combat
 {
@@ -48,6 +49,8 @@ namespace Project.Scripts.Player.Combat
             {
                 ApplyDamage(other);
             }
+
+            if (other.GetComponent<PlayerDodge>().IsInvulnerable) return;
             if (owner == BulletOwner.Enemy && other.CompareTag("Player"))
             {
                 ApplyDamage(other);
