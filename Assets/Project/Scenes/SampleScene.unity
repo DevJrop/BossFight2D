@@ -30118,9 +30118,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: amplitude
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: flashTime
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: frequency
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 1670649544}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4958273485814987878, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
@@ -30159,13 +30171,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1670649544}
     - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: amplitude
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: flashTime
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: frequency
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: maxHealth
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 1670649544}
     - target: {fileID: 4228116225329514040, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: m_IsTrigger
       value: 0
