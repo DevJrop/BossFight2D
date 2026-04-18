@@ -16,6 +16,7 @@ namespace Project.Scripts.Player.Combat
         private Rigidbody2D rb;
         private TrailRenderer trail;
         private GameObject prefab;
+        [SerializeField] private GameObject explosionPrefab;
 
         private void Awake()
         {
@@ -63,8 +64,8 @@ namespace Project.Scripts.Player.Combat
             if (health != null)
             {
                 health.TakeDamage(damage);
-                
             }
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             ReturnToPool();
         }
         private void ReturnToPool()

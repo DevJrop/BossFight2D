@@ -16,9 +16,6 @@ namespace Project.Scripts.Player.Combat
         [SerializeField] private float chargerTime;
         private int counterShoots;
         private bool isReloading;
-        
-        
-
         private void Update()
         {
             HandleInputShoot();
@@ -35,17 +32,13 @@ namespace Project.Scripts.Player.Combat
                 Shoot();
             }
         }
-
         IEnumerator Reload()
         {
-            
             isReloading = true;
             yield return new WaitForSeconds(chargerTime);
             counterShoots = 0;
             isReloading = false;
-            
         }
-
         private void Shoot()
         {
             GameObject bulletObject = objectPool.GetObject(attack.bulletPrefab);
