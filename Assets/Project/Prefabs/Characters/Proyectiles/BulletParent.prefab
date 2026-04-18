@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301e0462165f01043b769869b9b53dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Combat.Bullet
+  flashTime: 0.2
 --- !u!96 &2838321117722591339
 TrailRenderer:
   serializedVersion: 4

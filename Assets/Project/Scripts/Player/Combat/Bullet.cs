@@ -50,7 +50,7 @@ namespace Project.Scripts.Player.Combat
                 ApplyDamage(other);
             }
 
-            if (other.GetComponent<PlayerDodge>().IsInvulnerable) return;
+            if (other.CompareTag("Player") &&other.GetComponent<PlayerDodge>().IsInvulnerable) return;
             if (owner == BulletOwner.Enemy && other.CompareTag("Player"))
             {
                 ApplyDamage(other);
@@ -63,8 +63,8 @@ namespace Project.Scripts.Player.Combat
             if (health != null)
             {
                 health.TakeDamage(damage);
+                
             }
-
             ReturnToPool();
         }
         private void ReturnToPool()
