@@ -30154,6 +30154,14 @@ PrefabInstance:
       propertyPath: objectPool
       value: 
       objectReference: {fileID: 690250636}
+    - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: chargerTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: chargerCapacity
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 509412361503784350, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: m_Name
       value: Player

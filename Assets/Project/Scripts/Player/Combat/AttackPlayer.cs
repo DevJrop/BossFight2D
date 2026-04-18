@@ -1,3 +1,4 @@
+using System.Collections;
 using Project.Scripts.Player.Controller;
 using UnityEngine;
 
@@ -11,22 +12,44 @@ namespace Project.Scripts.Player.Combat
         [Header("References")]
         [SerializeField] private Transform firePoint;
         [SerializeField] private ObjectPool objectPool;
+        [SerializeField] private float chargerCapacity;
+        [SerializeField] private float chargerTime;
+        private int counterShoots;
+        private bool isReloading;
+        
+        
 
         private void Update()
         {
-            HandleInput();
+            HandleInputShoot();
         }
-        private void HandleInput()
+        private void HandleInputShoot()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (isReloading) return;
+            if (Input.GetMouseButton(0))
             {
+                if (chargerCapacity <= counterShoots)
+                {
+                    StartCoroutine(Reload());
+                }
                 Shoot();
             }
+        }
+
+        IEnumerator Reload()
+        {
+            
+            isReloading = true;
+            yield return new WaitForSeconds(chargerTime);
+            counterShoots = 0;
+            isReloading = false;
+            
         }
 
         private void Shoot()
         {
             GameObject bulletObject = objectPool.GetObject(attack.bulletPrefab);
+            counterShoots++;
 
             bulletObject.transform.position = firePoint.position;
             bulletObject.transform.rotation = firePoint.rotation;
