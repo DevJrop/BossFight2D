@@ -64,6 +64,14 @@ PrefabInstance:
       propertyPath: m_Parameters.colorGradient.key0.r
       value: 0.54718304
       objectReference: {fileID: 0}
+    - target: {fileID: 7352533537192247211, guid: 3da3bb829995703469c2109b40ac3617, type: 3}
+      propertyPath: m_Color.b
+      value: 0.972549
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352533537192247211, guid: 3da3bb829995703469c2109b40ac3617, type: 3}
+      propertyPath: m_Color.r
+      value: 0.48093677
+      objectReference: {fileID: 0}
     - target: {fileID: 9119580683506744921, guid: 3da3bb829995703469c2109b40ac3617, type: 3}
       propertyPath: m_Name
       value: EnemyBullet Variant
