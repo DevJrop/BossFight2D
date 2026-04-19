@@ -1,8 +1,8 @@
 using System;
 using System.Collections;
+using Project.Scripts.Controller;
 using Unity.Cinemachine;
 using UnityEngine;
-
 namespace Project.Scripts.Enemy.Core
 {
     public class Health : MonoBehaviour, IDamageable
@@ -14,28 +14,35 @@ namespace Project.Scripts.Enemy.Core
         [SerializeField] private CinemachineCamera virtualCamera;
         [SerializeField] private float amplitude;
         [SerializeField] private float frequency;
+        private bool isAlive;
         public event Action<float, float> OnHealthChanged;
-
+        [SerializeField] private DeathEvent deathEvent;
         private void Awake()
         {
             currentHealth = maxHealth;
             noise = virtualCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
+            isAlive = true;
         }
         public void TakeDamage(float damage)
         {
-            if (currentHealth <= 0) return;
+            if (!isAlive) return;
             
             currentHealth -= damage;
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-            StartCoroutine(ApplyEffectDamage());
+            
             NotifyHealthBar();
-
+            StartCoroutine(ApplyEffectDamage());
+            
+            if (currentHealth <= 0)
+            {
+                isAlive = false;
+                deathEvent.Die();
+            }
         }
         private void NotifyHealthBar()
         {
             OnHealthChanged?.Invoke(currentHealth, maxHealth);
         }
-
         IEnumerator ApplyEffectDamage()
         {
             SpriteRenderer colorFlash = GetComponent<SpriteRenderer>(); 
