@@ -35177,6 +35177,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: autoShootRate
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: powerUpAttack
       value: 
       objectReference: {fileID: 11400000, guid: cc48791cdb5ef4f4eaea52b5c53b6034, type: 2}

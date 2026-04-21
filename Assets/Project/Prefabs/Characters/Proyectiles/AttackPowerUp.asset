@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039773dc32af1e94cbbea0701b61db48, type: 3}
   m_Name: AttackPowerUp
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Player.Combat.Attack
-  damage: 3
+  damage: 5
   bulletPrefab: {fileID: 6656986582738183785, guid: 03a90ac87415456428e40070800ee27c, type: 3}
   cooldown: 5
   speed: 5

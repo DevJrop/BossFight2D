@@ -22,6 +22,10 @@ namespace Project.Scripts.Player.Combat
         private float autoShootTimer;
         [SerializeField] private float autoShootRate = 0.2f;
         
+        [Header("Fire Rate")]
+        [SerializeField] private float fireRate = 0.2f;
+        private float fireTimer;
+        
         private Attack currentAttack;
         
         private void Start()
@@ -52,6 +56,11 @@ namespace Project.Scripts.Player.Combat
         }
         private void Update()
         {
+            if (fireTimer > 0)
+            {
+                fireTimer -= Time.deltaTime;
+            }
+            
             if (powerUpHoming != null && powerUpHoming.IsActive)
             {
                 AutoShoot();
@@ -75,6 +84,8 @@ namespace Project.Scripts.Player.Combat
         private void HandleInputShoot()
         {
             if (isReloading) return;
+            if (fireTimer > 0) return;
+            
             if (Input.GetMouseButton(0))
             {
                 if (chargerCapacity <= counterShoots)
@@ -82,6 +93,7 @@ namespace Project.Scripts.Player.Combat
                     StartCoroutine(Reload());
                 }
                 Shoot();
+                fireTimer = fireRate;
             }
         }
         IEnumerator Reload()
@@ -94,7 +106,7 @@ namespace Project.Scripts.Player.Combat
         
         private void Shoot()
         {
-            Transform target = FindClosestEnemy();
+            Transform target = FindEnemy();
             
             GameObject bulletObject = objectPool.GetObject(currentAttack.bulletPrefab);
             counterShoots++;
@@ -120,24 +132,16 @@ namespace Project.Scripts.Player.Combat
             bullet.SetTarget(target, isHoming);
         }
         
-        private Transform FindClosestEnemy()
+        private Transform FindEnemy()
         {
-            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-
-            Transform closest = null;
-            float minDistance = Mathf.Infinity;
-
-            foreach (GameObject enemy in enemies)
+            GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
+            
+            if (enemy != null)
             {
-                float distance = Vector2.Distance(transform.position, enemy.transform.position);
-
-                if (distance < minDistance)
-                {
-                    minDistance = distance;
-                    closest = enemy.transform;
-                }
+                return enemy.transform;
             }
-            return closest;
+            
+            return null;
         }
     }
 }

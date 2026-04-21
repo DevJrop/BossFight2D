@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039773dc32af1e94cbbea0701b61db48, type: 3}
   m_Name: PlayerAttack
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Combat.Attack
-  damage: 3.1
+  damage: 7
   bulletPrefab: {fileID: 8333372192017641528, guid: 19e3586b9fb7664488db8ea37bd591cc, type: 3}
   cooldown: 0
   speed: 13
