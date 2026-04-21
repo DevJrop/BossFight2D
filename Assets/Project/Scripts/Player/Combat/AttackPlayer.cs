@@ -16,9 +16,30 @@ namespace Project.Scripts.Player.Combat
         [SerializeField] private float chargerTime;
         private int counterShoots;
         private bool isReloading;
+        [SerializeField] private PowerUp powerUpHoming;
+        private float autoShootTimer;
+        [SerializeField] private float autoShootRate = 0.2f;
         private void Update()
         {
-            HandleInputShoot();
+            if (powerUpHoming != null && powerUpHoming.IsActive)
+            {
+                AutoShoot();
+            }
+            else
+            {
+                HandleInputShoot();
+            }
+        }
+
+        private void AutoShoot()
+        {
+            autoShootTimer += Time.deltaTime;
+
+            if (autoShootTimer >= autoShootRate)
+            {
+                autoShootTimer = 0f;
+                Shoot();
+            }
         }
         private void HandleInputShoot()
         {
@@ -41,6 +62,7 @@ namespace Project.Scripts.Player.Combat
         }
         private void Shoot()
         {
+            Transform target = FindClosestEnemy();
             GameObject bulletObject = objectPool.GetObject(attack.bulletPrefab);
             counterShoots++;
 
@@ -51,6 +73,7 @@ namespace Project.Scripts.Player.Combat
             rb.linearVelocity = firePoint.right * attack.speed;
 
             Bullet bullet = bulletObject.GetComponent<Bullet>();
+
             bullet.SetPool(
                 objectPool,
                 attack.bulletPrefab,
@@ -58,6 +81,29 @@ namespace Project.Scripts.Player.Combat
                 BulletOwner.Player,
                 attack.damage
             );
+
+            bool isHoming = powerUpHoming != null && powerUpHoming.IsActive;
+
+            bullet.SetTarget(target, isHoming);
+        }
+        private Transform FindClosestEnemy()
+        {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+            Transform closest = null;
+            float minDistance = Mathf.Infinity;
+
+            foreach (GameObject enemy in enemies)
+            {
+                float distance = Vector2.Distance(transform.position, enemy.transform.position);
+
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    closest = enemy.transform;
+                }
+            }
+            return closest;
         }
     }
 }

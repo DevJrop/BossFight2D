@@ -1,40 +1,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPool : MonoBehaviour
+namespace Project.Scripts.Player.Controller
 {
-    private Dictionary<GameObject, Queue<GameObject>> poolDictionary = new();
-
-    public GameObject GetObject(GameObject prefab)
+    public class ObjectPool : MonoBehaviour
     {
-        if (!poolDictionary.ContainsKey(prefab))
+        private Dictionary<GameObject, Queue<GameObject>> poolDictionary = new();
+
+        public GameObject GetObject(GameObject prefab)
         {
-            poolDictionary[prefab] = new Queue<GameObject>();
+            if (!poolDictionary.ContainsKey(prefab))
+            {
+                poolDictionary[prefab] = new Queue<GameObject>();
+            }
+
+            Queue<GameObject> pool = poolDictionary[prefab];
+
+            if (pool.Count > 0)
+            {
+                GameObject obj = pool.Dequeue();
+                obj.SetActive(true);
+                return obj;
+            }
+            else
+            {
+                return Instantiate(prefab);
+            }
         }
 
-        Queue<GameObject> pool = poolDictionary[prefab];
-
-        if (pool.Count > 0)
+        public void ReturnObject(GameObject obj, GameObject prefab)
         {
-            GameObject obj = pool.Dequeue();
-            obj.SetActive(true);
-            return obj;
-        }
-        else
-        {
-            return Instantiate(prefab);
-        }
-    }
+            obj.SetActive(false);
 
-    public void ReturnObject(GameObject obj, GameObject prefab)
-    {
-        obj.SetActive(false);
+            if (!poolDictionary.ContainsKey(prefab))
+            {
+                poolDictionary[prefab] = new Queue<GameObject>();
+            }
 
-        if (!poolDictionary.ContainsKey(prefab))
-        {
-            poolDictionary[prefab] = new Queue<GameObject>();
+            poolDictionary[prefab].Enqueue(obj);
         }
-
-        poolDictionary[prefab].Enqueue(obj);
     }
 }

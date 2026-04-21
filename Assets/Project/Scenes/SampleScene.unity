@@ -34645,6 +34645,21 @@ MonoBehaviour:
   - {fileID: 1964410467}
   rb2DsToDisable: {fileID: 1964410471}
   animator: {fileID: 1964410469}
+--- !u!114 &1964410474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529416852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4799fa839e6d944c84957eee1a2f7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerUp
+  maxMana: 5
+  drainSpeed: 1
+  rechargeSpeed: 0.5
 --- !u!1 &1967997473
 GameObject:
   m_ObjectHideFlags: 0
@@ -35049,6 +35064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6543453951877598534, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6979993510808487095, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -35141,6 +35160,10 @@ PrefabInstance:
       propertyPath: chargerTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: powerUpHoming
+      value: 
+      objectReference: {fileID: 1964410474}
     - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: chargerCapacity
       value: 30
@@ -35257,6 +35280,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1097549918869243746, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1964410474}
     - targetCorrespondingSourceObject: {fileID: 1097549918869243746, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1964410473}
