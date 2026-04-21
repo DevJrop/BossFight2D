@@ -21415,6 +21415,7 @@ GameObject:
   - component: {fileID: 1080410294}
   - component: {fileID: 1080410296}
   - component: {fileID: 1080410295}
+  - component: {fileID: 1080410297}
   m_Layer: 5
   m_Name: PowerBar
   m_TagString: Untagged
@@ -21479,6 +21480,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080410293}
   m_CullTransparentMesh: 1
+--- !u!114 &1080410297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080410293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d142b07104bbe445ba6a645715e7796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Prefabs.Characters.Proyectiles.PowerUpUI
+  powerUp: {fileID: 1964410474}
+  fillImage: {fileID: 1080410295}
 --- !u!1 &1088340901
 GameObject:
   m_ObjectHideFlags: 0
@@ -34657,9 +34672,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4799fa839e6d944c84957eee1a2f7fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
-  maxMana: 5
-  drainSpeed: 1
-  rechargeSpeed: 0.5
+  maxMana: 10
+  drainSpeed: 5
+  regenValue: 1
+  regenTime: 3
 --- !u!1 &1967997473
 GameObject:
   m_ObjectHideFlags: 0
@@ -35160,6 +35176,10 @@ PrefabInstance:
       propertyPath: chargerTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: powerUpAttack
+      value: 
+      objectReference: {fileID: 11400000, guid: cc48791cdb5ef4f4eaea52b5c53b6034, type: 2}
     - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: powerUpHoming
       value: 

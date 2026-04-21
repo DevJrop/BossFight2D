@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Project.Scripts.Player.Controller;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace Project.Scripts.Player.Combat
     {
         [Header("Attack Data")]
         [SerializeField] private Attack attack;
+        [SerializeField] private Attack powerUpAttack;
 
         [Header("References")]
         [SerializeField] private Transform firePoint;
@@ -19,6 +21,35 @@ namespace Project.Scripts.Player.Combat
         [SerializeField] private PowerUp powerUpHoming;
         private float autoShootTimer;
         [SerializeField] private float autoShootRate = 0.2f;
+        
+        private Attack currentAttack;
+        
+        private void Start()
+        {
+            currentAttack = attack;
+            if (powerUpHoming != null)
+            {
+                powerUpHoming.OnPowerUpStateChanged += OnPowerUpStateChanged;
+            }
+        }
+        private void OnDestroy()
+        {
+            if (powerUpHoming != null)
+            {
+                powerUpHoming.OnPowerUpStateChanged -= OnPowerUpStateChanged;
+            }
+        }
+        private void OnPowerUpStateChanged(bool isActive)
+        {
+            if (isActive)
+            {
+                currentAttack = powerUpAttack != null ? powerUpAttack : attack;
+            }
+            else
+            {
+                currentAttack = attack;
+            }
+        }
         private void Update()
         {
             if (powerUpHoming != null && powerUpHoming.IsActive)
@@ -60,32 +91,35 @@ namespace Project.Scripts.Player.Combat
             counterShoots = 0;
             isReloading = false;
         }
+        
         private void Shoot()
         {
             Transform target = FindClosestEnemy();
-            GameObject bulletObject = objectPool.GetObject(attack.bulletPrefab);
+            
+            GameObject bulletObject = objectPool.GetObject(currentAttack.bulletPrefab);
             counterShoots++;
 
             bulletObject.transform.position = firePoint.position;
             bulletObject.transform.rotation = firePoint.rotation;
 
             Rigidbody2D rb = bulletObject.GetComponent<Rigidbody2D>();
-            rb.linearVelocity = firePoint.right * attack.speed;
+            rb.linearVelocity = firePoint.right * currentAttack.speed;
 
             Bullet bullet = bulletObject.GetComponent<Bullet>();
 
             bullet.SetPool(
                 objectPool,
-                attack.bulletPrefab,
-                attack.timeAfterDestroy,
+                currentAttack.bulletPrefab,
+                currentAttack.timeAfterDestroy,
                 BulletOwner.Player,
-                attack.damage
+                currentAttack.damage
             );
 
             bool isHoming = powerUpHoming != null && powerUpHoming.IsActive;
 
             bullet.SetTarget(target, isHoming);
         }
+        
         private Transform FindClosestEnemy()
         {
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");

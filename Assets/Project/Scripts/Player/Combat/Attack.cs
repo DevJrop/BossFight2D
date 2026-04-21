@@ -3,6 +3,7 @@ using UnityEngine;
 namespace Project.Scripts.Player.Combat
 {
     [CreateAssetMenu(fileName = "Attack", menuName = "Scriptable Objects/Attack")]
+    [System.Serializable]
     public class Attack : ScriptableObject
     {
         public float damage;
