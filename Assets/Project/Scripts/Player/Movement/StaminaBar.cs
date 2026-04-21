@@ -12,7 +12,6 @@ namespace Project.Scripts.Player.Movement
         {
             dodge.OnStaminaChanged += UpdateBar;
         }
-
         private void OnDisable()
         {
             dodge.OnStaminaChanged -= UpdateBar;

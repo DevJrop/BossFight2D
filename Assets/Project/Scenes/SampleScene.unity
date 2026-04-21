@@ -34673,9 +34673,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   maxMana: 10
-  drainSpeed: 5
-  regenValue: 1
-  regenTime: 3
+  drainSpeed: 6.74
+  regenValue: 0.46
+  regenTime: 2.04
 --- !u!1 &1967997473
 GameObject:
   m_ObjectHideFlags: 0
@@ -35138,7 +35138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: deathEvent

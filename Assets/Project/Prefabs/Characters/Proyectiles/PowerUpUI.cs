@@ -18,7 +18,6 @@ namespace Project.Prefabs.Characters.Proyectiles
                 UpdateManaBar(powerUp.GetManaNormalized());
             }
         }
-        
         private void OnDestroy()
         {
             if (powerUp != null)
