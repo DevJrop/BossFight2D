@@ -106,6 +106,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
         }
         IEnumerator Reload()
         {
+            playerSoundController.PlayReload();
             isReloading = true;
             yield return new WaitForSeconds(chargerTime);
             counterShoots = 0;

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2ec87-80b0-45ae-8b84-7535eff753b1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/PowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/PowerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/AttackPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/AttackPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,7 @@
       <workItem from="1776476267529" duration="36177000" />
       <workItem from="1776701666657" duration="1412000" />
       <workItem from="1776741801309" duration="6358000" />
-      <workItem from="1776818348912" duration="8426000" />
+      <workItem from="1776818348912" duration="9322000" />
     </task>
     <servers />
   </component>

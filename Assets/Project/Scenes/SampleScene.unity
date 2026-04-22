@@ -34807,7 +34807,7 @@ MonoBehaviour:
   dodge: {fileID: 0}
   damage: {fileID: 0}
   walk: {fileID: 8300000, guid: f26cf9ded47cf0140957490a16f85acc, type: 3}
-  reload: {fileID: 0}
+  reload: {fileID: 8300000, guid: 3ae623a7534fe0c47b661d5c387314b3, type: 3}
 --- !u!1 &1967997473
 GameObject:
   m_ObjectHideFlags: 0
@@ -35330,7 +35330,7 @@ PrefabInstance:
       objectReference: {fileID: 690250636}
     - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: chargerTime
-      value: 2
+      value: 1.42
       objectReference: {fileID: 0}
     - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: autoShootRate
@@ -35346,7 +35346,7 @@ PrefabInstance:
       objectReference: {fileID: 1964410474}
     - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: chargerCapacity
-      value: 30
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 509412361503784350, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: m_Name
