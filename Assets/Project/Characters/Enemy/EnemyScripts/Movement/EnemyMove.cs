@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Project.Characters.Enemy.EnemyScripts.Movement
 {
@@ -13,15 +15,20 @@ namespace Project.Characters.Enemy.EnemyScripts.Movement
         [SerializeField] private float pointClose = 0.2f;
         [SerializeField] private float speedBetweenPoints = 3f;
 
-        private Transform enemy;
+        [SerializeField]private Transform enemy;
         private Animator animator;
         private SpriteRenderer spriteRenderer;
 
-        private int currentSpot;
+        [SerializeField] private int currentSpot;
         private int randPos;
 
         private bool isWaiting; 
-        private bool isMoving;  
+        private bool isMoving;
+
+        private void Awake()
+        {
+            enemy.position = spots[currentSpot].position;
+        }
 
         private void Start()
         {
