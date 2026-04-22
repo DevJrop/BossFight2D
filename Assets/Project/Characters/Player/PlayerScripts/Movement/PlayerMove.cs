@@ -29,6 +29,8 @@ namespace Project.Characters.Player.PlayerScripts.Movement
 
         PlayerDodge playerDodge;
         private bool isMoving;
+        
+        [SerializeField][Range(0,0.5f)] private float volume;
 
         private void Awake()
         {
@@ -97,7 +99,7 @@ namespace Project.Characters.Player.PlayerScripts.Movement
             {
                 AudioClip clip = isRunning ? runStep : walkStep;
 
-                playerSoundController.PlayWalk(clip);
+                playerSoundController.PlayWalk(clip, volume);
 
                 stepTimer = stepRate;
             }

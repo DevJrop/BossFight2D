@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Project.Characters.Player.PlayerScripts.Controller;
 using Project.Scripts.Controller;
 using Unity.Cinemachine;
 using UnityEngine;
@@ -18,8 +19,13 @@ namespace Project.Characters.Enemy.EnemyScripts.Core
         private bool isAlive;
         public event Action<float, float> OnHealthChanged;
         [SerializeField] private DeathEvent deathEvent;
+        [SerializeField] private AudioClip damageSound;
+        private PlayerSoundController playerSoundController;
+        [SerializeField][Range(0,0.5f)] private float volume;
+        
         private void Awake()
         {
+            playerSoundController = GetComponent<PlayerSoundController>();
             currentHealth = maxHealth;
             noise = virtualCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
             isAlive = true;
@@ -46,6 +52,7 @@ namespace Project.Characters.Enemy.EnemyScripts.Core
         }
         IEnumerator ApplyEffectDamage()
         {
+            playerSoundController.PlayDamage(damageSound, volume);
             SpriteRenderer colorFlash = GetComponent<SpriteRenderer>(); 
             colorFlash.color = Color.red;
             noise.AmplitudeGain = amplitude;

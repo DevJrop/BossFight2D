@@ -7,13 +7,13 @@ namespace Project.Characters.Player.PlayerScripts.Controller
         [SerializeField] private AudioSource audioSource;
         [SerializeField] private AudioClip fire;
         [SerializeField] private AudioClip dodge;
-        [SerializeField] private AudioClip damage;
         [SerializeField] private AudioClip walk;
         [SerializeField] private AudioClip reload;
+        [SerializeField] private AudioClip damage;
         
-        public void PlayFire()
+        public void PlayFire(float volume)
         {
-            audioSource.PlayOneShot(fire);
+            audioSource.PlayOneShot(fire, volume);
         }
 
         public void PlayDodge()
@@ -21,18 +21,18 @@ namespace Project.Characters.Player.PlayerScripts.Controller
             audioSource.PlayOneShot(dodge);
         }
 
-        public void PlayDamage()
+        public void PlayDamage(AudioClip clip, float volume)
         {
-            audioSource.PlayOneShot(damage);
+            audioSource.PlayOneShot(damage, volume);
         }
         
-        public void PlayWalk(AudioClip clip)
+        public void PlayWalk(AudioClip clip, float volume)
         {
-            audioSource.PlayOneShot(walk);
+            audioSource.PlayOneShot(walk, volume);
         }
-        public void PlayReload()
+        public void PlayReload(float volume)
         {
-            audioSource.PlayOneShot(reload);
+            audioSource.PlayOneShot(reload, volume);
         }
     }
 }

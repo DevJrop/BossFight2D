@@ -30,6 +30,8 @@ namespace Project.Characters.Player.PlayerScripts.Combat
         private Attack currentAttack;
         
         private PlayerSoundController playerSoundController;
+        [SerializeField][Range(0,0.5f)] private float volumeShoot;
+        [SerializeField][Range(0,0.5f)] private float volumeReload;
 
         private void Awake()
         {
@@ -106,7 +108,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
         }
         IEnumerator Reload()
         {
-            playerSoundController.PlayReload();
+            playerSoundController.PlayReload(volumeReload);
             isReloading = true;
             yield return new WaitForSeconds(chargerTime);
             counterShoots = 0;
@@ -118,7 +120,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
             Transform target = FindEnemy();
             
             GameObject bulletObject = objectPool.GetObject(currentAttack.bulletPrefab);
-            playerSoundController.PlayFire();
+            playerSoundController.PlayFire(volumeShoot);
             counterShoots++;
 
             bulletObject.transform.position = firePoint.position;

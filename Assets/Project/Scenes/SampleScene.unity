@@ -34805,9 +34805,9 @@ MonoBehaviour:
   audioSource: {fileID: 1964410475}
   fire: {fileID: 8300000, guid: d8d606dd0257b2c47933e6a0ca2c67a0, type: 3}
   dodge: {fileID: 0}
-  damage: {fileID: 0}
   walk: {fileID: 8300000, guid: f26cf9ded47cf0140957490a16f85acc, type: 3}
   reload: {fileID: 8300000, guid: 3ae623a7534fe0c47b661d5c387314b3, type: 3}
+  damage: {fileID: 8300000, guid: 5c5e1774e10df354e8b5823a18cd21c1, type: 3}
 --- !u!1 &1967997473
 GameObject:
   m_ObjectHideFlags: 0
@@ -35281,6 +35281,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: volume
+      value: 0.154
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: amplitude
       value: 1.1
       objectReference: {fileID: 0}
@@ -35301,6 +35305,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5799127837795627921}
     - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: damageSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d7712d9e6306b7d4d9b3ab7423859445, type: 3}
+    - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: virtualCamera
       value: 
       objectReference: {fileID: 1670649544}
@@ -35315,6 +35323,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8074365689003654122, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       insertIndex: 5
       addedObject: {fileID: 5799127837795627921}
+    - targetCorrespondingSourceObject: {fileID: 8074365689003654122, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 5799127837795627924}
+    - targetCorrespondingSourceObject: {fileID: 8074365689003654122, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5799127837795627925}
   m_SourcePrefab: {fileID: 100100000, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
 --- !u!1001 &5085270530348379768
 PrefabInstance:
@@ -35325,12 +35339,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 721378802}
     m_Modifications:
     - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: volume
+      value: 0.104
+      objectReference: {fileID: 0}
+    - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: objectPool
       value: 
       objectReference: {fileID: 690250636}
     - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: chargerTime
       value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: volumeShoot
+      value: 0.416
+      objectReference: {fileID: 0}
+    - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: volumeReload
+      value: 0.188
       objectReference: {fileID: 0}
     - target: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: autoShootRate
@@ -35356,6 +35382,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1345243519282449277, guid: dfec414aa9f4ab345851b489f931fceb, type: 3}
+    - target: {fileID: 1832209501962205342, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: volume
+      value: 0.208
+      objectReference: {fileID: 0}
     - target: {fileID: 1832209501962205342, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: runStep
       value: 
@@ -35385,6 +35415,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1670649544}
     - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: volume
+      value: 0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: amplitude
       value: 3
       objectReference: {fileID: 0}
@@ -35404,6 +35438,10 @@ PrefabInstance:
       propertyPath: deathEvent
       value: 
       objectReference: {fileID: 1964410473}
+    - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: damageSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c5e1774e10df354e8b5823a18cd21c1, type: 3}
     - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: virtualCamera
       value: 
@@ -35554,6 +35592,121 @@ MonoBehaviour:
   - {fileID: 5799127837795627918}
   rb2DsToDisable: {fileID: 5799127837795627916}
   animator: {fileID: 5799127837795627909}
+--- !u!114 &5799127837795627924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064188919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc7b3da6a22a3a41adb7367ca04ea09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Characters.Player.PlayerScripts.Controller.PlayerSoundController
+  audioSource: {fileID: 5799127837795627925}
+  fire: {fileID: 0}
+  dodge: {fileID: 0}
+  walk: {fileID: 0}
+  reload: {fileID: 0}
+  damage: {fileID: 8300000, guid: 32a787f770600b34696bfa2d4464c1bd, type: 3}
+--- !u!82 &5799127837795627925
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064188919}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
