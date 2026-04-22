@@ -34691,7 +34691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   maxMana: 10
   drainSpeed: 6.74
-  regenValue: 0.46
+  regenValue: 0.5
   regenTime: 2.04
 --- !u!82 &1964410475
 AudioSource:
