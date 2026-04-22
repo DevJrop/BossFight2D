@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using Project.Characters.Player.PlayerScripts.Controller;
+using Project.Characters.Player.PlayerScripts.Core;
 using UnityEngine;
 
 namespace Project.Characters.Player.PlayerScripts.Combat
@@ -27,6 +29,13 @@ namespace Project.Characters.Player.PlayerScripts.Combat
         
         private Attack currentAttack;
         
+        private PlayerSoundController playerSoundController;
+
+        private void Awake()
+        {
+            playerSoundController = GetComponent<PlayerSoundController>();
+        }
+
         private void Start()
         {
             currentAttack = attack;
@@ -108,6 +117,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
             Transform target = FindEnemy();
             
             GameObject bulletObject = objectPool.GetObject(currentAttack.bulletPrefab);
+            playerSoundController.PlayFire();
             counterShoots++;
 
             bulletObject.transform.position = firePoint.position;

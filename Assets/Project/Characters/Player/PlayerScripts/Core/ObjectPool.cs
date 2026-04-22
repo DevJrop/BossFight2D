@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Project.Characters.Player.PlayerScripts.Controller
+namespace Project.Characters.Player.PlayerScripts.Core
 {
     public class ObjectPool : MonoBehaviour
     {

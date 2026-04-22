@@ -6,7 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="55d2ec87-80b0-45ae-8b84-7535eff753b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Enemy/EnemyScripts/Movement/EnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Enemy/EnemyScripts/Movement/EnemyMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Enemy/EnemyScripts/Combat/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Enemy/EnemyScripts/Combat/EnemyAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerAnimations/Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerAnimations/Run.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerAnimations/RunR.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerAnimations/RunR.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/AttackPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/AttackPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/PowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/PowerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Controller/ObjectPool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Controller/ObjectPool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Controller/PlayerAim.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Controller/PlayerAim.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Controller/PowerUpUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Controller/PowerUpUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Controller/WeaponPivot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Controller/WeaponPivot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Movement/PlayerDodge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Movement/PlayerDodge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Movement/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Movement/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +33,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Prefabs/Characters/Proyectiles/ExplosionAutoDestroy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Prefabs/Characters/Proyectiles/PowerUpUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Controller/PlayerSoundController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Controller/DeathEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Combat/EnemyAttack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Core/Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Core/IDamageable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Player/Combat/PowerUp.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/PlayerMove.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Player/Movement/StaminaBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@f011712243ad/Editor/GridEditorUtility.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -109,7 +118,7 @@
       <workItem from="1776476267529" duration="36177000" />
       <workItem from="1776701666657" duration="1412000" />
       <workItem from="1776741801309" duration="6358000" />
-      <workItem from="1776818348912" duration="838000" />
+      <workItem from="1776818348912" duration="7665000" />
     </task>
     <servers />
   </component>

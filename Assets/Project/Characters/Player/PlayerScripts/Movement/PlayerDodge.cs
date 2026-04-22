@@ -70,7 +70,7 @@ namespace Project.Characters.Player.PlayerScripts.Movement
             trail.enabled = true;
             noise.AmplitudeGain = 1.2f;
             noise.FrequencyGain = 2f;
-            rb.linearVelocity = playerMove.moveInput * dashForce;
+            rb.linearVelocity = playerMove.MoveInput * dashForce;
             yield return new WaitForSeconds(dashTime);
             noise.AmplitudeGain = 0f;
             noise.FrequencyGain = 0f;

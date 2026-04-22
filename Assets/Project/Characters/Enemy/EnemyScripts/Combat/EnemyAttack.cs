@@ -1,6 +1,7 @@
 using Project.Characters.Enemy.EnemyScripts.Movement;
 using Project.Characters.Player.PlayerScripts.Combat;
 using Project.Characters.Player.PlayerScripts.Controller;
+using Project.Characters.Player.PlayerScripts.Core;
 using UnityEngine;
 
 namespace Project.Characters.Enemy.EnemyScripts.Combat
