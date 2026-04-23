@@ -35255,6 +35255,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 721378802}
     m_Modifications:
+    - target: {fileID: 3701382818455734294, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3701382818455734294, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4826814334081951953, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: enemy
       value: 
@@ -35432,6 +35440,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8074365689003654122, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5799127837795627925}
+    - targetCorrespondingSourceObject: {fileID: 8074365689003654122, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5799127837795627928}
   m_SourcePrefab: {fileID: 100100000, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
 --- !u!1001 &5085270530348379768
 PrefabInstance:
@@ -35813,6 +35824,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &5799127837795627928
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064188919}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0885973, y: -0.00000011920929}
+  m_Radius: 1.1041818
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
