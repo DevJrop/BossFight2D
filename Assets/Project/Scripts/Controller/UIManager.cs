@@ -21,4 +21,6 @@ public class UIManager : MonoBehaviour
     {
         menuController.SettingsMenu();
     }
+
+    public bool IsPaused { get; set; }
 }

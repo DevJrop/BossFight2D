@@ -93,6 +93,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
         }
         private void HandleInputShoot()
         {
+            if (UIManager.instance.IsPaused) return;
             if (isReloading) return;
             if (fireTimer > 0) return;
             

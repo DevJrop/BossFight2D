@@ -47,6 +47,7 @@ namespace Project.Characters.Player.PlayerScripts.Movement
         }
         private void DodgeInput()
         {
+            if (UIManager.instance.IsPaused) return;
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 TryDodge();
