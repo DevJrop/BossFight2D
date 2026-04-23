@@ -16,9 +16,9 @@ namespace Project.Characters.Player.PlayerScripts.Controller
             audioSource.PlayOneShot(fire, volume);
         }
 
-        public void PlayDodge()
+        public void PlayDodge(float volume)
         {
-            audioSource.PlayOneShot(dodge);
+            audioSource.PlayOneShot(dodge, volume);
         }
 
         public void PlayDamage(AudioClip clip, float volume)

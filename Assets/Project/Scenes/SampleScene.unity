@@ -34895,7 +34895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Project.Characters.Player.PlayerScripts.Controller.PlayerSoundController
   audioSource: {fileID: 1964410475}
   fire: {fileID: 8300000, guid: d8d606dd0257b2c47933e6a0ca2c67a0, type: 3}
-  dodge: {fileID: 0}
+  dodge: {fileID: 8300000, guid: 6899df3382dfff549963fe7a4c6f15a9, type: 3}
   walk: {fileID: 8300000, guid: f26cf9ded47cf0140957490a16f85acc, type: 3}
   reload: {fileID: 8300000, guid: 3ae623a7534fe0c47b661d5c387314b3, type: 3}
   damage: {fileID: 8300000, guid: 5c5e1774e10df354e8b5823a18cd21c1, type: 3}
@@ -35515,6 +35515,10 @@ PrefabInstance:
     - target: {fileID: 1832209501962205342, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: walkStepRate
       value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: volume
+      value: 0.165
       objectReference: {fileID: 0}
     - target: {fileID: 2674154525866016348, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: dodgeCost

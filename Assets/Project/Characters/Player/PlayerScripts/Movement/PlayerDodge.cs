@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Project.Characters.Player.PlayerScripts.Controller;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
@@ -31,9 +32,12 @@ namespace Project.Characters.Player.PlayerScripts.Movement
         [Header("Camera Shake")]
         [SerializeField] private CinemachineCamera virtualCamera;
         private CinemachineBasicMultiChannelPerlin noise;
+        private PlayerSoundController playerSoundController;
+        [SerializeField][Range(0,0.5f)] private float volume;
         
         void Start()
         {
+            playerSoundController = GetComponent<PlayerSoundController>();
             noise = virtualCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
             playerMove = GetComponent<PlayerMove>();
             rb = GetComponent<Rigidbody2D>();
@@ -50,6 +54,7 @@ namespace Project.Characters.Player.PlayerScripts.Movement
             if (UIManager.instance.IsPaused) return;
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                playerSoundController.PlayDodge(volume);
                 TryDodge();
             }
         }
