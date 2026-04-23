@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Project.Characters.Player.PlayerScripts.Controller;
 using UnityEngine;
 
@@ -27,7 +28,15 @@ namespace Project.Scripts.Controller
             }
             rb2DsToDisable.linearVelocity =  Vector2.zero;
             animator.SetTrigger("Die");
+            StartCoroutine(OpenUI());
         }
+
+        IEnumerator OpenUI()
+        {
+            yield return new WaitForSeconds(2);
+            UIManager.instance.YouDieManager();
+        }
+        
 
     }
 }

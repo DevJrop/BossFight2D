@@ -22,5 +22,9 @@ public class UIManager : MonoBehaviour
         menuController.SettingsMenu();
     }
 
+    public void YouDieManager()
+    {
+        menuController.YouDieMenu();
+    }
     public bool IsPaused { get; set; }
 }
