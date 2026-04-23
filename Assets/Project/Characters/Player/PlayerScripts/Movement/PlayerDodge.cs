@@ -54,19 +54,16 @@ namespace Project.Characters.Player.PlayerScripts.Movement
             if (UIManager.instance.IsPaused) return;
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                playerSoundController.PlayDodge(volume);
                 TryDodge();
             }
         }
         private void TryDodge()
         {
-            if (currentStamina < dodgeCost)
-            {
-                return;
-            }
+            if (currentStamina < dodgeCost)return;
             currentStamina -= dodgeCost;
             OnStaminaChanged?.Invoke(currentStamina, maxStamina);
             StartCoroutine(Dash());
+            playerSoundController.PlayDodge(volume);
             
         }
         IEnumerator Dash()
