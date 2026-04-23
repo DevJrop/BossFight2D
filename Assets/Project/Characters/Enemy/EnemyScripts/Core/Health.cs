@@ -23,6 +23,7 @@ namespace Project.Characters.Enemy.EnemyScripts.Core
         private PlayerSoundController playerSoundController;
         [SerializeField][Range(0,0.5f)] private float volume;
         
+        
         private void Awake()
         {
             playerSoundController = GetComponent<PlayerSoundController>();

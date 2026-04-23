@@ -34768,6 +34768,7 @@ MonoBehaviour:
   - {fileID: 1276988544}
   rb2DsToDisable: {fileID: 1964410471}
   animator: {fileID: 1964410469}
+  volumeLose: 0.195
 --- !u!114 &1964410474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34899,6 +34900,8 @@ MonoBehaviour:
   walk: {fileID: 8300000, guid: f26cf9ded47cf0140957490a16f85acc, type: 3}
   reload: {fileID: 8300000, guid: 3ae623a7534fe0c47b661d5c387314b3, type: 3}
   damage: {fileID: 8300000, guid: 5c5e1774e10df354e8b5823a18cd21c1, type: 3}
+  win: {fileID: 0}
+  lose: {fileID: 8300000, guid: 777de66687472754fa32ad11765435c6, type: 3}
 --- !u!114 &1964410480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35561,6 +35564,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1964410473}
     - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+      propertyPath: volumeLose
+      value: 0.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476364176363382055, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
       propertyPath: damageSound
       value: 
       objectReference: {fileID: 8300000, guid: 5c5e1774e10df354e8b5823a18cd21c1, type: 3}
@@ -35717,6 +35724,7 @@ MonoBehaviour:
   - {fileID: 5799127837795627918}
   rb2DsToDisable: {fileID: 5799127837795627916}
   animator: {fileID: 5799127837795627909}
+  volumeLose: 0
 --- !u!114 &5799127837795627924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35735,6 +35743,8 @@ MonoBehaviour:
   walk: {fileID: 0}
   reload: {fileID: 0}
   damage: {fileID: 8300000, guid: 32a787f770600b34696bfa2d4464c1bd, type: 3}
+  win: {fileID: 0}
+  lose: {fileID: 0}
 --- !u!82 &5799127837795627925
 AudioSource:
   m_ObjectHideFlags: 0

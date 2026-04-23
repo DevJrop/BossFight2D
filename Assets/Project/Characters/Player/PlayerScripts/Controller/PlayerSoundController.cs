@@ -10,7 +10,9 @@ namespace Project.Characters.Player.PlayerScripts.Controller
         [SerializeField] private AudioClip walk;
         [SerializeField] private AudioClip reload;
         [SerializeField] private AudioClip damage;
-        
+        [SerializeField] private AudioClip win;
+        [SerializeField] private AudioClip lose;
+            
         public void PlayFire(float volume)
         {
             audioSource.PlayOneShot(fire, volume);
@@ -33,6 +35,14 @@ namespace Project.Characters.Player.PlayerScripts.Controller
         public void PlayReload(float volume)
         {
             audioSource.PlayOneShot(reload, volume);
+        }
+        public void PlayWin(float volume)
+        {
+            audioSource.PlayOneShot(win, volume);
+        }
+        public void PlayLose(float volume)
+        {
+            audioSource.PlayOneShot(lose, volume);
         }
     }
 }

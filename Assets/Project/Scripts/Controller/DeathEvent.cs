@@ -1,4 +1,5 @@
 using System;
+using Project.Characters.Player.PlayerScripts.Controller;
 using UnityEngine;
 
 namespace Project.Scripts.Controller
@@ -8,15 +9,18 @@ namespace Project.Scripts.Controller
         [SerializeField] private MonoBehaviour[] componentsToDisable;
         [SerializeField] private Rigidbody2D rb2DsToDisable;
         [SerializeField] private Animator animator;
-
+        [SerializeField][Range(0,0.5f)] private float volumeLose;
+        private PlayerSoundController playerSoundController;
         private void Awake()
         {
+            playerSoundController = GetComponent<PlayerSoundController>();
             animator = GetComponent<Animator>();
             rb2DsToDisable = GetComponent<Rigidbody2D>();
         }
 
         public void Die()
         {
+            playerSoundController.PlayLose(volumeLose);
             foreach (var comp in componentsToDisable)
             {
                 comp.enabled = false;
