@@ -34894,7 +34894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Characters.Player.PlayerScripts.Controller.PlayerSoundController
   audioSource: {fileID: 1964410475}
-  fire: {fileID: 8300000, guid: d8d606dd0257b2c47933e6a0ca2c67a0, type: 3}
+  fire: {fileID: 8300000, guid: abb6311979875414aa2f8a33df1d80ce, type: 3}
   dodge: {fileID: 8300000, guid: 6899df3382dfff549963fe7a4c6f15a9, type: 3}
   walk: {fileID: 8300000, guid: f26cf9ded47cf0140957490a16f85acc, type: 3}
   reload: {fileID: 8300000, guid: 3ae623a7534fe0c47b661d5c387314b3, type: 3}
@@ -35328,6 +35328,10 @@ PrefabInstance:
       value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: volumeShoot
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292740209133562557, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: wallFireRate
       value: 0.11
       objectReference: {fileID: 0}
@@ -35726,7 +35730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Characters.Player.PlayerScripts.Controller.PlayerSoundController
   audioSource: {fileID: 5799127837795627925}
-  fire: {fileID: 0}
+  fire: {fileID: 8300000, guid: 1313e94d429dd8642bbfd6e5f96bad91, type: 3}
   dodge: {fileID: 0}
   walk: {fileID: 0}
   reload: {fileID: 0}

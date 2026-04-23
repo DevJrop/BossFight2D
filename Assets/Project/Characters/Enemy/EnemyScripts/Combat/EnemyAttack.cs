@@ -1,8 +1,10 @@
+using System;
 using Project.Characters.Enemy.EnemyScripts.Movement;
 using Project.Characters.Player.PlayerScripts.Combat;
 using Project.Characters.Player.PlayerScripts.Controller;
 using Project.Characters.Player.PlayerScripts.Core;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Project.Characters.Enemy.EnemyScripts.Combat
 {
@@ -35,6 +37,8 @@ namespace Project.Characters.Enemy.EnemyScripts.Combat
         [SerializeField] private float wallArcAngle = 60f;
         [SerializeField] private float wallRotationSpeed = 120f;
         [SerializeField] private Attack wallAttack;
+        private PlayerSoundController playerSoundController;
+        [SerializeField][Range(0,0.5f)] private float volumeShoot;
 
         private enum AttackPhase
         {
@@ -49,8 +53,12 @@ namespace Project.Characters.Enemy.EnemyScripts.Combat
         private float targetTimer;
         private float wallTimer;
         private float rotationOffset;
-
         private bool wasWaitingLastFrame;
+
+        private void Start()
+        {
+            playerSoundController = GetComponent<PlayerSoundController>();
+        }
 
         private void Update()
         {
@@ -68,12 +76,9 @@ namespace Project.Characters.Enemy.EnemyScripts.Combat
                 if (animator != null)
                     animator.SetTrigger("Idle");
             }
-
             wasWaitingLastFrame = true;
-
             ExecuteCurrentPhase();
         }
-
         private void SelectNewPhase()
         {
             int random = Random.Range(0, 3);
@@ -185,6 +190,7 @@ namespace Project.Characters.Enemy.EnemyScripts.Combat
         }
         private void SpawnBullet(Vector2 direction, Attack attackData)
         {
+            playerSoundController.PlayFire(volumeShoot);
             GameObject obj = pool.GetObject(attackData.bulletPrefab);
 
             obj.transform.position = firePoint.position;
