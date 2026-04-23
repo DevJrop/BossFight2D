@@ -35741,6 +35741,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4826814334081951953, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: col
+      value: 
+      objectReference: {fileID: 5799127837795627929}
+    - target: {fileID: 4826814334081951953, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: enemy
       value: 
       objectReference: {fileID: 5799127837795627915}
@@ -35762,7 +35766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4826814334081951953, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: speedBetweenPoints
-      value: 8.34
+      value: 5.25
       objectReference: {fileID: 0}
     - target: {fileID: 4826814334081951953, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: 'spots.Array.data[0]'
@@ -35880,6 +35884,10 @@ PrefabInstance:
       propertyPath: amplitude
       value: 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+      propertyPath: enemyMove
+      value: 
+      objectReference: {fileID: 5799127837795627919}
     - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: flashTime
       value: 0.3
@@ -36352,6 +36360,11 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.0885973, y: -0.00000011920929}
   m_Radius: 1.1041818
+--- !u!61 &5799127837795627929 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3259292880099266957, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
+  m_PrefabInstance: {fileID: 4202402077594716664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

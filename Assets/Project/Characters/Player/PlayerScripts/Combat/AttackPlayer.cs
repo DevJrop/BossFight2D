@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Project.Characters.Enemy.EnemyScripts.Movement;
 using Project.Characters.Player.PlayerScripts.Controller;
 using Project.Characters.Player.PlayerScripts.Core;
 using UnityEngine;
@@ -32,6 +33,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
         private PlayerSoundController playerSoundController;
         [SerializeField][Range(0,0.5f)] private float volumeShoot;
         [SerializeField][Range(0,0.5f)] private float volumeReload;
+        [SerializeField] private EnemyMove enemyMove;
 
         private void Awake()
         {
@@ -97,6 +99,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
             if (isReloading) return;
             if (fireTimer > 0) return;
             
+            
             if (Input.GetMouseButton(0))
             {
                 if (chargerCapacity <= counterShoots)
@@ -118,6 +121,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
         
         private void Shoot()
         {
+            
             Transform target = FindEnemy();
             
             GameObject bulletObject = objectPool.GetObject(currentAttack.bulletPrefab);

@@ -21,9 +21,11 @@ namespace Project.Characters.Enemy.EnemyScripts.Movement
 
         [SerializeField] private int currentSpot;
         private int randPos;
+        [SerializeField] private Collider2D col;
 
         private bool isWaiting; 
         private bool isMoving;
+        private bool isUnderGround;
 
         private void Awake()
         {
@@ -43,6 +45,7 @@ namespace Project.Characters.Enemy.EnemyScripts.Movement
 
             if (isMoving)
             {
+                
                 enemy.position = Vector2.MoveTowards(
                     enemy.position,
                     spots[currentSpot].position,
@@ -67,7 +70,6 @@ namespace Project.Characters.Enemy.EnemyScripts.Movement
 
             CheckArrival();
         }
-
         private void CheckArrival()
         {
             if (Vector2.Distance(enemy.position, spots[currentSpot].position) < pointClose && !isWaiting)
@@ -81,6 +83,8 @@ namespace Project.Characters.Enemy.EnemyScripts.Movement
         {
             yield return new WaitForSeconds(timeSpot);
 
+            isUnderGround = true;
+            col.enabled = false;
             if (animator != null)
                 animator.SetTrigger("Hide");
             yield return new WaitForSeconds(1);
@@ -98,7 +102,8 @@ namespace Project.Characters.Enemy.EnemyScripts.Movement
         private void FinishMovement()
         {
             isMoving = false;
-
+            isUnderGround = false;
+            col.enabled = true;
             if (spriteRenderer != null)
                 spriteRenderer.enabled = true;
 
@@ -108,5 +113,6 @@ namespace Project.Characters.Enemy.EnemyScripts.Movement
             isWaiting = false;
         }
         public bool IsWaiting => isWaiting && !isMoving;
+        public bool IsUnderGround => isUnderGround;
     }
 }

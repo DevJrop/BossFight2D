@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
+using Project.Characters.Enemy.EnemyScripts.Movement;
 using Project.Characters.Player.PlayerScripts.Controller;
+using Project.Characters.Player.PlayerScripts.Movement;
 using Project.Scripts.Controller;
 using Unity.Cinemachine;
 using UnityEngine;
@@ -22,7 +24,7 @@ namespace Project.Characters.Enemy.EnemyScripts.Core
         [SerializeField] private AudioClip damageSound;
         private PlayerSoundController playerSoundController;
         [SerializeField][Range(0,0.5f)] private float volume;
-        
+        [SerializeField] private EnemyMove enemyMove;
         
         private void Awake()
         {
@@ -33,14 +35,13 @@ namespace Project.Characters.Enemy.EnemyScripts.Core
         }
         public void TakeDamage(float damage)
         {
+            if (enemyMove != null && enemyMove.IsUnderGround) return;
             if (!isAlive) return;
-            
             currentHealth -= damage;
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
             
             NotifyHealthBar();
             StartCoroutine(ApplyEffectDamage());
-            
             if (currentHealth <= 0)
             {
                 isAlive = false;
