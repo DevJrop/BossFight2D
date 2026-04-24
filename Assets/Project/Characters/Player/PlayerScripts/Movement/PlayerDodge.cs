@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Project.Characters.Player.PlayerScripts.Controller;
+using Project.Scripts.Controller;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;

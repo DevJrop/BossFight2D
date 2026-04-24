@@ -3,6 +3,7 @@ using System.Collections;
 using Project.Characters.Enemy.EnemyScripts.Movement;
 using Project.Characters.Player.PlayerScripts.Controller;
 using Project.Characters.Player.PlayerScripts.Core;
+using Project.Scripts.Controller;
 using UnityEngine;
 
 namespace Project.Characters.Player.PlayerScripts.Combat

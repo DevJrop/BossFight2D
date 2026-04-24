@@ -12,6 +12,7 @@ namespace Project.Scripts.Controller
         [SerializeField] private Animator animator;
         [SerializeField][Range(0,0.5f)] private float volumeLose;
         private PlayerSoundController playerSoundController;
+        [SerializeField] GameObject DeathMenu;
         private void Awake()
         {
             playerSoundController = GetComponent<PlayerSoundController>();
@@ -34,7 +35,7 @@ namespace Project.Scripts.Controller
         IEnumerator OpenUI()
         {
             yield return new WaitForSeconds(2);
-            UIManager.instance.YouDieManager();
+            UIManager.instance.YouDieManager(DeathMenu);
         }
         
 

@@ -1,30 +1,33 @@
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+namespace Project.Scripts.Controller
 {
-    public static UIManager instance;
-
-    [SerializeField] private MenuController menuController;
-    private void Awake()
+    public class UIManager : MonoBehaviour
     {
-        if (instance == null)
+        public static UIManager instance;
+
+        [SerializeField] private MenuController menuController;
+        private void Awake()
         {
-            instance = this;
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
-        else
+
+        public void SettingsManager()
         {
-            Destroy(gameObject);
+            menuController.SettingsMenu();
         }
-    }
 
-    public void SettingsManager()
-    {
-        menuController.SettingsMenu();
+        public void YouDieManager(GameObject menuWhenDie)
+        {
+            menuController.YouDieMenu(menuWhenDie);
+        }
+        public bool IsPaused { get; set; }
     }
-
-    public void YouDieManager()
-    {
-        menuController.YouDieMenu();
-    }
-    public bool IsPaused { get; set; }
 }
