@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.20845899, y: 0.24943359, z: 1}
+  m_LocalScale: {x: 0.25770742, y: 0.2981511, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7664654444335894423}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 7
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: b02112b65cce35f4b84a4dacbcdc4a57, type: 3}
+  m_Sprite: {fileID: -1345243519282449277, guid: dfec414aa9f4ab345851b489f931fceb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -142,6 +142,11 @@ GameObject:
   - component: {fileID: 2674154525866016348}
   - component: {fileID: 100576819054954185}
   - component: {fileID: 3476364176363382055}
+  - component: {fileID: 1467763588695067316}
+  - component: {fileID: 2492194972572678298}
+  - component: {fileID: 8309791031614620574}
+  - component: {fileID: 1723123650684553243}
+  - component: {fileID: 5648822401573490026}
   m_Layer: 0
   m_Name: Content
   m_TagString: Player
@@ -282,7 +287,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -454,7 +459,11 @@ MonoBehaviour:
   speed: 7
   acceleration: 1
   deceleration: 2
-  moveInput: {x: 0, y: 0}
+  walkStepRate: 0.32
+  runStepRate: 0.23
+  walkStep: {fileID: 8300000, guid: f26cf9ded47cf0140957490a16f85acc, type: 3}
+  runStep: {fileID: 8300000, guid: fdc05ea2699023143ba7e93533cc5a0b, type: 3}
+  volume: 0.408
 --- !u!114 &2674154525866016348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,8 +478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Player.Movement.PlayerDodge
   dashForce: 18
   dashTime: 0.3
-  dodgeCost: 25
-  isDashing: 0
+  dodgeCost: 33.7
   currentStamina: 100
   maxStamina: 100
   staminaBar: {fileID: 0}
@@ -478,6 +486,7 @@ MonoBehaviour:
   regenValue: 11
   trail: {fileID: 2500818933822206269}
   virtualCamera: {fileID: 0}
+  volume: 0.165
 --- !u!114 &100576819054954185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,8 +500,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Combat.AttackPlayer
   attack: {fileID: 11400000, guid: 042920e1ccf44c7469c5caeb6d22dcdd, type: 2}
+  powerUpAttack: {fileID: 11400000, guid: cc48791cdb5ef4f4eaea52b5c53b6034, type: 2}
   firePoint: {fileID: 7664654444335894423}
   objectPool: {fileID: 0}
+  chargerCapacity: 22
+  chargerTime: 1.42
+  powerUpHoming: {fileID: 1467763588695067316}
+  autoShootRate: 0.11
+  fireRate: 0.2
+  volumeShoot: 0.305
+  volumeReload: 0.188
+  enemyMove: {fileID: 0}
 --- !u!114 &3476364176363382055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,6 +523,181 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af52f8561a0abf049a3cf2ffd8020611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Core.Health
+  maxHealth: 250
+  flashTime: 0.3
+  virtualCamera: {fileID: 0}
+  amplitude: 3
+  frequency: 2
+  deathEvent: {fileID: 2492194972572678298}
+  damageSound: {fileID: 8300000, guid: 5c5e1774e10df354e8b5823a18cd21c1, type: 3}
+  volume: 0.198
+  enemyMove: {fileID: 0}
+--- !u!114 &1467763588695067316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097549918869243746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4799fa839e6d944c84957eee1a2f7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerUp
+  maxMana: 10
+  drainSpeed: 6.74
+  regenValue: 0.5
+  regenTime: 2.04
+--- !u!114 &2492194972572678298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097549918869243746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f104f9cb7d954aa4e9d68dde7d5e8b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Controller.DeathEvent
+  componentsToDisable:
+  - {fileID: 100576819054954185}
+  - {fileID: 2674154525866016348}
+  - {fileID: 1832209501962205342}
+  - {fileID: 111285263307275191}
+  rb2DsToDisable: {fileID: 7506309308988781698}
+  animator: {fileID: 8555346400023830481}
+  volumeLose: 0.195
+  DeathMenu: {fileID: 0}
+--- !u!114 &8309791031614620574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097549918869243746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc7b3da6a22a3a41adb7367ca04ea09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Characters.Player.PlayerScripts.Controller.PlayerSoundController
+  audioSource: {fileID: 1723123650684553243}
+  fire: {fileID: 8300000, guid: abb6311979875414aa2f8a33df1d80ce, type: 3}
+  dodge: {fileID: 8300000, guid: 6899df3382dfff549963fe7a4c6f15a9, type: 3}
+  walk: {fileID: 8300000, guid: f26cf9ded47cf0140957490a16f85acc, type: 3}
+  reload: {fileID: 8300000, guid: 3ae623a7534fe0c47b661d5c387314b3, type: 3}
+  damage: {fileID: 8300000, guid: 5c5e1774e10df354e8b5823a18cd21c1, type: 3}
+  win: {fileID: 0}
+  lose: {fileID: 8300000, guid: 777de66687472754fa32ad11765435c6, type: 3}
+--- !u!82 &1723123650684553243
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097549918869243746}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &5648822401573490026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097549918869243746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f4d6b1377d5c44b986ea602c3d2cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputManager
 --- !u!1 &2670212769013945015
 GameObject:
   m_ObjectHideFlags: 0
