@@ -5382,9 +5382,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 81376746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62c3b8fad0215004d95b95c1bc53dcb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 20034cbd9affba14190336e23c95c258, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Player.Movement.StaminaBar
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Characters.Enemy.EnemyScripts.Core.UpdateBar
+  health: {fileID: 0}
+  healthBar: {fileID: 0}
+  powerUp: {fileID: 0}
+  fillImage: {fileID: 0}
   dodge: {fileID: 1213600106}
   fill: {fileID: 81376748}
 --- !u!1 &89617885
@@ -10934,6 +10938,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Core.UpdateBar
   health: {fileID: 1964410465}
   healthBar: {fileID: 777048933}
+  powerUp: {fileID: 0}
+  fillImage: {fileID: 0}
+  dodge: {fileID: 0}
+  fill: {fileID: 0}
 --- !u!1 &782236885
 GameObject:
   m_ObjectHideFlags: 0
@@ -21843,6 +21851,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Core.UpdateBar
   health: {fileID: 5799127837795627904}
   healthBar: {fileID: 962257313}
+  powerUp: {fileID: 0}
+  fillImage: {fileID: 0}
+  dodge: {fileID: 0}
+  fill: {fileID: 0}
 --- !u!114 &962257313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22246,11 +22258,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1080410293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d142b07104bbe445ba6a645715e7796, type: 3}
+  m_Script: {fileID: 11500000, guid: 20034cbd9affba14190336e23c95c258, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Project.Prefabs.Characters.Proyectiles.PowerUpUI
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Characters.Enemy.EnemyScripts.Core.UpdateBar
+  health: {fileID: 0}
+  healthBar: {fileID: 0}
   powerUp: {fileID: 1964410474}
   fillImage: {fileID: 1080410295}
+  dodge: {fileID: 0}
+  fill: {fileID: 0}
 --- !u!1 &1088340901
 GameObject:
   m_ObjectHideFlags: 0
