@@ -5390,7 +5390,9 @@ MonoBehaviour:
   powerUp: {fileID: 0}
   fillImage: {fileID: 0}
   dodge: {fileID: 1213600106}
-  fill: {fileID: 81376748}
+  fillStamina: {fileID: 0}
+  reload: {fileID: 0}
+  fillReload: {fileID: 0}
 --- !u!1 &89617885
 GameObject:
   m_ObjectHideFlags: 0
@@ -9363,7 +9365,7 @@ RectTransform:
   m_GameObject: {fileID: 552618586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.00875, y: 0.008929322, z: 1}
+  m_LocalScale: {x: 0.00459375, y: 0.006250525, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1461196514}
@@ -10941,7 +10943,9 @@ MonoBehaviour:
   powerUp: {fileID: 0}
   fillImage: {fileID: 0}
   dodge: {fileID: 0}
-  fill: {fileID: 0}
+  fillStamina: {fileID: 0}
+  reload: {fileID: 0}
+  fillReload: {fileID: 0}
 --- !u!1 &782236885
 GameObject:
   m_ObjectHideFlags: 0
@@ -21854,7 +21858,9 @@ MonoBehaviour:
   powerUp: {fileID: 0}
   fillImage: {fileID: 0}
   dodge: {fileID: 0}
-  fill: {fileID: 0}
+  fillStamina: {fileID: 0}
+  reload: {fileID: 0}
+  fillReload: {fileID: 0}
 --- !u!114 &962257313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22266,7 +22272,9 @@ MonoBehaviour:
   powerUp: {fileID: 1964410474}
   fillImage: {fileID: 1080410295}
   dodge: {fileID: 0}
-  fill: {fileID: 0}
+  fillStamina: {fileID: 0}
+  reload: {fileID: 0}
+  fillReload: {fileID: 0}
 --- !u!1 &1088340901
 GameObject:
   m_ObjectHideFlags: 0
@@ -23656,8 +23664,9 @@ GameObject:
   - component: {fileID: 1461196514}
   - component: {fileID: 1461196516}
   - component: {fileID: 1461196515}
+  - component: {fileID: 1461196517}
   m_Layer: 5
-  m_Name: BGReload (1)
+  m_Name: fillReload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23672,7 +23681,7 @@ RectTransform:
   m_GameObject: {fileID: 1461196513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9375, y: 0.62499, z: 1}
+  m_LocalScale: {x: 0.9375, y: 0.48436722, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 552618587}
@@ -23720,6 +23729,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461196513}
   m_CullTransparentMesh: 1
+--- !u!114 &1461196517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461196513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20034cbd9affba14190336e23c95c258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Controller.UpdateBar
+  health: {fileID: 0}
+  healthBar: {fileID: 0}
+  powerUp: {fileID: 0}
+  fillImage: {fileID: 0}
+  dodge: {fileID: 0}
+  fillStamina: {fileID: 0}
+  reload: {fileID: 1964410480}
+  fillReload: {fileID: 1461196515}
 --- !u!1 &1517250316
 GameObject:
   m_ObjectHideFlags: 0
@@ -35850,6 +35879,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4799fa839e6d944c84957eee1a2f7fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
+--- !u!114 &1964410480 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 100576819054954185, guid: b6d11e7718ee7134ca50907660946a85, type: 3}
+  m_PrefabInstance: {fileID: 5085270530348379768}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3835a0c5ef3ff3d4c9daf15c2533ef56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Enemy.Combat.AttackPlayer
 --- !u!1 &1967997473
 GameObject:
   m_ObjectHideFlags: 0
@@ -36441,7 +36481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 8939012618320290551, guid: 6cf86bb3890bc064ab4e0540fe93570a, type: 3}
       propertyPath: deathEvent

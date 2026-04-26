@@ -11,14 +11,18 @@ namespace Project.Scripts.Controller
         [Header("Health")]
         [SerializeField] private Health health;
         [SerializeField] private Image healthBar;
-        
+
         [Header("PowerUp")]
         [SerializeField] private PowerUp powerUp;
         [SerializeField] private Image fillImage;
-        
+
         [Header("Stamina")]
         [SerializeField] private PlayerDodge dodge;
-        [SerializeField] private Image fill;
+        [SerializeField] private Image fillStamina;
+
+        [Header("Reload")]
+        [SerializeField] private AttackPlayer reload;
+        [SerializeField] private Image fillReload;
 
         private void OnEnable()
         {
@@ -29,12 +33,14 @@ namespace Project.Scripts.Controller
             if (powerUp != null)
             {
                 powerUp.OnManaChanged += UpdateManaBar;
-                
-                UpdateManaBar(powerUp.GetManaNormalized());
             }
             if (dodge != null)
             {
                 dodge.OnStaminaChanged += UpdateStaminaBar;
+            }
+            if (reload != null)
+            {
+                reload.OnReloadChange += UpdateReloadBar;
             }
         }
         private void OnDisable()
@@ -51,6 +57,10 @@ namespace Project.Scripts.Controller
             {
                 dodge.OnStaminaChanged -= UpdateStaminaBar;
             }
+            if (reload != null)
+            {
+                reload.OnReloadChange -= UpdateReloadBar;
+            }
         }
         private void Start()
         {
@@ -66,22 +76,30 @@ namespace Project.Scripts.Controller
             {
                 UpdateManaBar(powerUp.GetManaNormalized());
             }
+            if (fillReload != null)
+            {
+                UpdateReloadBar(1f, 1f);
+            }
         }
         private void UpdateHealthBar(float current, float max)
         {
-            float ratio = current / max;
-            healthBar.fillAmount = ratio;
+            if (healthBar == null) return;
+            healthBar.fillAmount = current / max;
         }
         private void UpdateManaBar(float normalizedMana)
         {
-            if (fillImage != null)
-            {
-                fillImage.fillAmount = normalizedMana;
-            }
+            if (fillImage == null) return;
+            fillImage.fillAmount = normalizedMana;
         }
         private void UpdateStaminaBar(float current, float max)
         {
-            fill.fillAmount = current / max;
+            if (fillStamina == null) return;
+            fillStamina.fillAmount = current / max;
+        }
+        private void UpdateReloadBar(float current, float max)
+        {
+            if (fillReload == null) return;
+            fillReload.fillAmount = current / max;
         }
     }
 }

@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="55d2ec87-80b0-45ae-8b84-7535eff753b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Enemy/EnemyScripts/Core/UpdateBar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Enemy/EnemyScripts/Core/UpdateBar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Core/PowerUpUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Core/PowerUpUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Movement/StaminaBar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Movement/StaminaBar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LowerResolution SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowerResolution SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/AttackPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Characters/Player/PlayerScripts/Combat/AttackPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Controller/UpdateBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Controller/UpdateBar.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +112,7 @@
       <workItem from="1776893711855" duration="16326000" />
       <workItem from="1776988035263" duration="884000" />
       <workItem from="1777001740152" duration="2622000" />
-      <workItem from="1777175044910" duration="2128000" />
+      <workItem from="1777175044910" duration="5943000" />
     </task>
     <servers />
   </component>
