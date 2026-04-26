@@ -56,7 +56,7 @@ namespace Project.Characters.Enemy.EnemyScripts.Core
         {
             playerSoundController.PlayDamage(damageSound, volume);
             SpriteRenderer colorFlash = GetComponent<SpriteRenderer>(); 
-            colorFlash.color = Color.red;
+            colorFlash.color = Color.white;
             noise.AmplitudeGain = amplitude;
             noise.FrequencyGain = frequency;
             yield return new WaitForSeconds(flashTime);
