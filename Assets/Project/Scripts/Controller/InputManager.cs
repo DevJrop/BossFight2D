@@ -1,14 +1,15 @@
-using Project.Scripts.Controller;
 using UnityEngine;
 
-public class InputManager : MonoBehaviour
+namespace Project.Scripts.Controller
 {
-    MenuController menuController;
-    void Update()
+    public class InputManager : MonoBehaviour
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        void Update()
         {
-            UIManager.instance.SettingsManager();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                UIManager.instance.SettingsManager();
+            }
         }
     }
 }

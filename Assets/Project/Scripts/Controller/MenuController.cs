@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Scene = Unity.VectorGraphics.Scene;
 
 namespace Project.Scripts.Controller
 {
@@ -23,7 +25,17 @@ namespace Project.Scripts.Controller
             UIManager.instance.IsPaused = !isActive;
             Time.timeScale = isActive ? 1 : 0;
         }
-    
-   
+        
+        public void StartGame()
+        {
+            SceneManager.LoadScene(1);
+            Time.timeScale = 1;
+        }
+        
+        public void BackToMenu()
+        {
+            SceneManager.LoadScene(0);
+            Time.timeScale = 1;
+        }
     }
 }
