@@ -6,13 +6,176 @@
   <component name="ChangeListManager">
     <list default="true" id="55d2ec87-80b0-45ae-8b84-7535eff753b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BossFight2D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Land_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Land_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Land_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Land_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Land_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Land_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Start_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Start_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Start_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Start_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Start_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Start_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_07.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_08.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_09.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_07.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_08.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_09.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Land_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_07.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_08.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_09.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_07.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_08.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_09.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Start_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Start_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Start_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Start_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Start_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Start_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Run/Footsteps_Tile_Run_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_07.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_08.wav.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/LowerResolution SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowerResolution SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Controller/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Controller/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Controller/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Controller/MenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +190,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Controller/DeathEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Controller/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Controller/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Menu/MenuAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Menu/PlayerJump.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@f011712243ad/Editor/GridEditorUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@bb329a87fcdc/Editor/TMP/TMP_FontAsset_CreationMenu.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -116,7 +281,7 @@
       <workItem from="1776988035263" duration="884000" />
       <workItem from="1777001740152" duration="2622000" />
       <workItem from="1777175044910" duration="7548000" />
-      <workItem from="1777433025097" duration="1534000" />
+      <workItem from="1777433025097" duration="5929000" />
     </task>
     <servers />
   </component>
