@@ -40,16 +40,20 @@ namespace Project.Characters.Player.PlayerScripts.Combat
             StopAllCoroutines();
             StartCoroutine(LifeRoutine());
         }
+        
+        //Esto lo hace el enemigo
         public void SetTarget(Transform target, bool isHoming)
         {
             this.target = target;
             this.isHoming = isHoming;
         }
+        //Esto lo hace el lifetimer
         IEnumerator LifeRoutine()
         {
             yield return new WaitForSeconds(lifeTime);
             ReturnToPool();
         }
+        
         private void Update()
         {
             if (!isHoming || target == null) return;
@@ -58,6 +62,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle);
         }
+        //Bullet collision
         void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Wall"))
@@ -75,6 +80,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
                 ApplyDamage(other);
             }
         }
+        //Bullet
         private void ApplyDamage(Collider2D other)
         {
             Health health = other.GetComponent<Health>();
@@ -85,6 +91,7 @@ namespace Project.Characters.Player.PlayerScripts.Combat
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             ReturnToPool();
         }
+        //Pooling
         private void ReturnToPool()
         {
             rb.linearVelocity = Vector2.zero;

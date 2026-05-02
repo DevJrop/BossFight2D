@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Project.Characters.Enemy.EnemyScripts.Combat;
 using Project.Characters.Player.PlayerScripts.Controller;
 using Project.Characters.Player.PlayerScripts.Core;
 using Project.Scripts.Controller;
@@ -11,15 +12,15 @@ namespace Project.Characters.Player.PlayerScripts.Combat
         #region Attack Configuration
 
         [Header("Attack Data")]
-        [SerializeField] private Attack attack;
-        [SerializeField] private Attack powerUpAttack;
+        [SerializeField] private AttackData attack;
+        [SerializeField] private AttackData powerUpAttack;
 
         [Header("Attack References")]
         [SerializeField] private Transform firePoint;
         [SerializeField] private ObjectPool objectPool;
         [SerializeField] private PowerUp powerUpHoming;
 
-        private Attack currentAttack;
+        private AttackData currentAttack;
 
         #endregion
         #region Reload System
@@ -160,13 +161,13 @@ namespace Project.Characters.Player.PlayerScripts.Combat
             Rigidbody2D rb = bulletObject.GetComponent<Rigidbody2D>();
             rb.linearVelocity = firePoint.right * currentAttack.speed;
             Bullet bullet = bulletObject.GetComponent<Bullet>();
-            bullet.SetPool(
+            /*bullet.SetPool(
                 objectPool,
                 currentAttack.bulletPrefab,
                 currentAttack.timeAfterDestroy,
                 BulletOwner.Player,
                 currentAttack.damage
-            );
+            );*/
             bool isHoming = powerUpHoming != null && powerUpHoming.IsActive;
             bullet.SetTarget(target, isHoming);
         }
